@@ -70,7 +70,7 @@
                     <br>
                     <input type="hidden" name="old_image" id="old_image">
                     <div class="row form-group">
-                        <label id="labelEmailAdmin" class="col-form-label col-md-2 col-sm-2">Email<font color="red">*</font></label>
+                        <label id="labelEmailReceptionist" class="col-form-label col-md-2 col-sm-2">Email<font color="red">*</font></label>
                         <div class="col-md col-sm">
                             <input type="email" class="form-control" name="email" id="emailReceptionist" placeholder="Masukkan email receptionist" value="<?= old('email'); ?>" />
                             <div class="invalid-feedback errorEmail"></div>
@@ -78,7 +78,7 @@
                     </div>
                     <input type="hidden" name="old_pass" id="old_pass">
                     <div class="row form-group">
-                        <label id="labelPasswordAdmin" class="col-form-label col-md-2 col-sm-2">Password<font color="red">*</font></label>
+                        <label id="labelPasswordReceptionist" class="col-form-label col-md-2 col-sm-2">Password<font color="red">*</font></label>
                         <div class="col-md col-sm">
                             <input class="form-control" type="password" name="password" id="passwordReceptionist" data-validate-length="6,8" />
                             <div class="invalid-feedback errorPassword"></div>
@@ -96,7 +96,7 @@
 
 
 <script>
-    function dataReceptionist() {
+    function dataAkun() {
         $.ajax({
             url: "<?= site_url('Admin/ambilReceptionist') ?>",
             dataType: "json",
@@ -110,7 +110,7 @@
     }
 
     $(document).ready(function() {
-        dataReceptionist();
+        dataAkun();
 
         $('.form_receptionist').submit(function(e) {
             e.preventDefault();
@@ -163,7 +163,7 @@
                         $('#emailReceptionist').val('');
                         $('#passwordReceptionist').val('');
                         $('#modalReceptionist').modal('hide');
-                        dataReceptionist();
+                        dataAkun();
                     }
                 },
                 error: function(xhr, ajaxOptions, thrownError) {

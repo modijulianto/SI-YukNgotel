@@ -41,6 +41,8 @@ class Auth extends BaseController
                 session()->set($data);
                 if ($akun['role_id'] == 1 | 2 | 3) {
                     return redirect()->to('/Admin');
+                } else {
+                    return redirect()->to('/');
                 }
             } else {
                 $this->session->set_flashdata('registered', '<div class="alert alert-warning" role="alert"><b>Failed!</b> wrong password!</div>');
@@ -96,6 +98,13 @@ class Auth extends BaseController
             'role_id' => 4
         ]);
         session()->setFlashdata('registered', '<div class="alert alert-success" role="alert"><b>Congratulation!</b> your account has been created. Please login to your account!</div>');
+        return redirect()->to('/Auth');
+    }
+
+    public function logout()
+    {
+        session()->destroy();
+        session()->setFlashdata('registered', '<div class="alert alert-success" role="alert"><b>Congratulation!</b> you have been logout!</div>');
         return redirect()->to('/Auth');
     }
 

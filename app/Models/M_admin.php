@@ -16,21 +16,38 @@ class M_admin extends Model
         return $this->where(['email' => $email])->first();
     }
 
-    public function getManager()
+    public function getManager($id_akun = false)
     {
-        // return $this->findAll();
-        $this->where(['role_id' => 1]);
-        return $this->findAll();
+        if ($id_akun == false) {
+            $this->orderBy('id_akun', 'DESC');
+            $this->where(['role_id' => 1]);
+            return $this->findAll();
+        } else {
+            return $this->getWhere(['id_akun' => $id_akun]);
+        }
     }
 
     public function getAdmin($id_akun = false)
     {
         if ($id_akun == false) {
+            $this->orderBy('id_akun', 'DESC');
             $this->where(['role_id' => 2]);
             return $this->findAll();
         }
 
         return $this->where(['id_akun' => $id_akun])->first();
+    }
+
+    // GUEST
+    public function getGuest($id_akun = false)
+    {
+        if ($id_akun == false) {
+            $this->orderBy('id_akun', 'DESC');
+            $this->where(['role_id' => 4]);
+            return $this->findAll();
+        } else {
+            return $this->getWhere(['id_akun' => $id_akun]);
+        }
     }
 
     // RECEPTIONIST

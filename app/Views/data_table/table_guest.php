@@ -7,7 +7,7 @@
         <thead>
             <tr>
                 <th class="text-center">#</th>
-                <th class="text-center">Nama Receptionist</th>
+                <th class="text-center">Nama Guest</th>
                 <th class="text-center">Email</th>
                 <th class="text-center">Foto</th>
                 <th class="text-center">Actions</th>
@@ -16,7 +16,7 @@
 
         <tbody>
             <?php $i = 1; ?>
-            <?php foreach ($receptionist as $val) { ?>
+            <?php foreach ($guest as $val) { ?>
                 <tr>
                     <td class="text-center"><?= $i++; ?></td>
                     <td><?= $val['nama']; ?></td>
@@ -43,7 +43,7 @@
     function edit(id_akun) {
         $.ajax({
             type: "post",
-            url: '<?= site_url('Admin/update_receptionist') ?>',
+            url: '<?= site_url('Admin/update_guest') ?>',
             data: {
                 id_akun: id_akun
             },

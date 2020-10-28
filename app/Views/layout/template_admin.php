@@ -85,10 +85,10 @@
                                 <li><a href="/admin"><i class="fa fa-bar-chart"></i> DASHBOARD </a></li>
                                 <li><a><i class="fa fa-th-list"></i> DATA USER <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="/admin/manager">Manager</a></li>
-                                        <li><a href="/admin/admin">Admin</a></li>
-                                        <li><a href="/admin/receptionist">Receptionist</a></li>
-                                        <li><a href="/admin/guest">Guest</a></li>
+                                        <li><a href="/Admin/manager">Manager</a></li>
+                                        <li><a href="/Admin/admin">Admin</a></li>
+                                        <li><a href="/Admin/receptionist">Receptionist</a></li>
+                                        <li><a href="/Admin/guest">Guest</a></li>
                                     </ul>
                                 </li>
                             </ul>
