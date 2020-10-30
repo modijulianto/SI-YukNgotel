@@ -3,7 +3,7 @@
 <?= $this->section('content'); ?>
 <form action="/Auth/regis" method="POST" class="login100-form validate-form">
     <span class="login100-form-logo">
-        <i class="zmdi zmdi-hotel"></i>
+        <a href="/"><img src="/assets/images/logo/logo.png" width="90px" alt=""></a>
     </span>
 
     <span class="login100-form-title p-b-30 p-t-25">

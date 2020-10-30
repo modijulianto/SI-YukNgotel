@@ -6,7 +6,7 @@
 <?php endif; ?>
 <form action="/Auth/login" method="POST" class="login100-form validate-form">
     <span class="login100-form-logo">
-        <a href="/"><img src="/" alt=""></a>
+        <a href="/"><img src="/assets/images/logo/logo.png" width="90px" alt=""></a>
     </span>
 
     <span class="login100-form-title p-b-30 p-t-25">

@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\M_admin;
-use App\Models\M_hotel;
+use App\Models\M_akomodasi;
 
 class Hotel extends BaseController
 {
@@ -11,7 +11,7 @@ class Hotel extends BaseController
 	public function __construct()
 	{
 		$this->m_admin = new M_admin();
-		$this->m_hotel = new M_hotel();
+		$this->m_akomodasi = new M_akomodasi();
 		// if (session()->get('email') == null) {
 		//     is_loggin();
 		// }
@@ -21,7 +21,7 @@ class Hotel extends BaseController
 	{
 		$data = [
 			'title' => "Satu Aplikasi untuk Booking Hotel Termurah | YukNgotel",
-			'akomodasi' => $this->m_hotel->getAkomodasi()
+			'akomodasi' => $this->m_akomodasi->getAkomodasi()
 		];
 		return view('frontend/beranda', $data);
 	}

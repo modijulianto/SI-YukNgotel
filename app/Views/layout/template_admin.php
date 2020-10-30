@@ -9,7 +9,7 @@
     <meta name="description" content="<?= (isset($meta)) ? $meta : ""; ?>">
     <meta name="author" content="Akamana Coffee">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="icon" type="image/png" href="<?= base_url('/assets/backend/images/Undiksha.ico') ?>" style="width:16px; height:16px">
+    <link rel="icon" type="image/png" href="<?= base_url('/assets/images/logo/logo.png') ?>" style="width:16px; height:16px">
 
     <!-- Bootstrap -->
     <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
@@ -41,6 +41,7 @@
 
     <!-- Custom Theme Style -->
     <link href="/assets/backend/build/css/custom.min.css" rel="stylesheet">
+    <link href="/assets/backend/build/css/style.css" rel="stylesheet">
     <script language="JavaScript" type="text/javascript" src="/assets/backend/build/js/google_chart/loader.js"></script>
 
     <!-- Select2 -->
@@ -56,8 +57,8 @@
             <div class="col-md-3 left_col menu_fixed">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="User" class="site_title"><img src="/assets/backend/images/Undiksha.png" alt="" width="40px"> <span>
-                                <font size="3"><b> KUY NGOTEL</b></font>
+                        <a href="User" class="site_title"><img src="/assets/images/logo/logo.png" alt="" width="40px"> <span>
+                                <font size="3"><b> YUK NGOTEL</b></font>
                             </span></a>
                     </div>
 
@@ -71,7 +72,7 @@
                         <div class="profile_info">
                             <span>Welcome,</span>
                             <h2><?= $akun['nama']; ?></h2>
-                            <span><?= $akun['role_id']; ?></span>
+                            <span><?= $akun['role']; ?></span>
                         </div>
                     </div>
                     <!-- /menu profile quick info -->
@@ -83,12 +84,22 @@
                         <div class="menu_section">
                             <ul class="nav side-menu">
                                 <li><a href="/admin"><i class="fa fa-bar-chart"></i> DASHBOARD </a></li>
-                                <li><a><i class="fa fa-th-list"></i> DATA USER <span class="fa fa-chevron-down"></span></a>
+                                <li><a><i class="fa fa-user"></i> DATA USER <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="/Admin/manager">Manager</a></li>
                                         <li><a href="/Admin/admin">Admin</a></li>
                                         <li><a href="/Admin/receptionist">Receptionist</a></li>
                                         <li><a href="/Admin/guest">Guest</a></li>
+                                    </ul>
+                                </li>
+                                <li><a><i class="fa fa-building-o"></i> DATA AKOMODASI <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="/Akomodasi/hotel">Hotel</a></li>
+                                        <li><a href="/Akomodasi/apartemen">Apartemen</a></li>
+                                        <li><a href="/Akomodasi/villa">Villa</a></li>
+                                        <li><a href="/Akomodasi/motel">Motel</a></li>
+                                        <li><a href="/Akomodasi/homestay">Homestay</a></li>
+                                        <li><a href="/Akomodasi/resort">Resort</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -104,7 +115,7 @@
                     <a data-toggle="tooltip" data-placement="top" title="FullScreen">
                         <span class="fa fa-arrows-alt" aria-hidden="true"></span>
                     </a> -->
-                        <a data-toggle="tooltip" data-placement="top" title="Back to Front" href="<?= base_url('Member'); ?>" style="width: 50%;">
+                        <a data-toggle="tooltip" data-placement="top" title="Back to Front" href="<?= base_url('/'); ?>" style="width: 50%;">
                             <span class="fa fa-mail-reply" aria-hidden="true"></span>
                         </a>
                         <a data-toggle="tooltip" data-placement="top" title="Logout" href="<?= base_url('Auth/logout') ?>" style="width: 50%;">

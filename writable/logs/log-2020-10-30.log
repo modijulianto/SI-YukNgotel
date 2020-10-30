@@ -1,0 +1,112 @@
+CRITICAL - 2020-10-30 04:53:58 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getFirstRow() must be of the type string, null given, called in /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php on line 508
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(508): CodeIgniter\Database\BaseResult->getFirstRow()
+#1 /opt/lampp/htdocs/yukngotel/app/Models/M_admin.php(26): CodeIgniter\Model->first()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Admin.php(23): App\Models\M_admin->getAkun()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-10-30 04:54:43 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getFirstRow() must be of the type string, null given, called in /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php on line 508
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(508): CodeIgniter\Database\BaseResult->getFirstRow()
+#1 /opt/lampp/htdocs/yukngotel/app/Models/M_admin.php(23): CodeIgniter\Model->first()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Admin.php(23): App\Models\M_admin->getAkun()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-10-30 04:55:12 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getFirstRow() must be of the type string, null given, called in /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php on line 508
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(508): CodeIgniter\Database\BaseResult->getFirstRow()
+#1 /opt/lampp/htdocs/yukngotel/app/Models/M_admin.php(23): CodeIgniter\Model->first()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Admin.php(23): App\Models\M_admin->getAkun()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-10-30 04:55:13 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getFirstRow() must be of the type string, null given, called in /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php on line 508
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(508): CodeIgniter\Database\BaseResult->getFirstRow()
+#1 /opt/lampp/htdocs/yukngotel/app/Models/M_admin.php(23): CodeIgniter\Model->first()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Admin.php(23): App\Models\M_admin->getAkun()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-10-30 04:55:39 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getFirstRow() must be of the type string, null given, called in /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php on line 508
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(508): CodeIgniter\Database\BaseResult->getFirstRow()
+#1 /opt/lampp/htdocs/yukngotel/app/Models/M_admin.php(23): CodeIgniter\Model->first()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Admin.php(23): App\Models\M_admin->getAkun()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-10-30 04:55:40 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getFirstRow() must be of the type string, null given, called in /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php on line 508
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(508): CodeIgniter\Database\BaseResult->getFirstRow()
+#1 /opt/lampp/htdocs/yukngotel/app/Models/M_admin.php(23): CodeIgniter\Model->first()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Admin.php(23): App\Models\M_admin->getAkun()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-10-30 04:55:40 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getFirstRow() must be of the type string, null given, called in /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php on line 508
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(508): CodeIgniter\Database\BaseResult->getFirstRow()
+#1 /opt/lampp/htdocs/yukngotel/app/Models/M_admin.php(23): CodeIgniter\Model->first()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Admin.php(23): App\Models\M_admin->getAkun()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-10-30 04:55:41 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getFirstRow() must be of the type string, null given, called in /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php on line 508
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(508): CodeIgniter\Database\BaseResult->getFirstRow()
+#1 /opt/lampp/htdocs/yukngotel/app/Models/M_admin.php(23): CodeIgniter\Model->first()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Admin.php(23): App\Models\M_admin->getAkun()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-10-30 04:57:42 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getFirstRow() must be of the type string, null given, called in /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php on line 508
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(508): CodeIgniter\Database\BaseResult->getFirstRow()
+#1 /opt/lampp/htdocs/yukngotel/app/Models/M_admin.php(23): CodeIgniter\Model->first()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Admin.php(23): App\Models\M_admin->getAkun()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-10-30 10:08:53 --> Undefined variable: admin
+#0 /opt/lampp/htdocs/yukngotel/app/Views/data_table/akomodasi/data_hotel.php(49): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /opt/lampp/htdocs/yukngotel/app/Controllers/Akomodasi.php(28): view()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Akomodasi->hotel()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2020-10-30 10:35:07 --> Undefined index: bitang
+#0 /opt/lampp/htdocs/yukngotel/app/Views/data_table/akomodasi/data_hotel.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /opt/lampp/htdocs/yukngotel/app/Controllers/Akomodasi.php(29): view()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Akomodasi->hotel()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#9 {main}

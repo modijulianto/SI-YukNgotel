@@ -11,8 +11,10 @@ class M_admin extends Model
     protected $useTimestamps = true;
     protected $allowedFields = ['nama', 'email', 'password', 'foto', 'role_id', 'is_active'];
 
+
     public function getAkun($email)
     {
+        $this->join('tb_role', 'tb_akun.role_id=tb_role.id');
         return $this->where(['email' => $email])->first();
     }
 
