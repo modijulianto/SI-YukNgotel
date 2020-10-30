@@ -6,7 +6,7 @@
 <?php endif; ?>
 <form action="/Auth/login" method="POST" class="login100-form validate-form">
     <span class="login100-form-logo">
-        <i class="zmdi zmdi-hotel"></i>
+        <a href="/"><img src="/" alt=""></a>
     </span>
 
     <span class="login100-form-title p-b-30 p-t-25">
