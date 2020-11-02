@@ -39,7 +39,6 @@
                                     <th class="text-center">#</th>
                                     <th class="text-center">Images</th>
                                     <th class="text-center">Nama</th>
-                                    <th class="text-center">Deskripsi</th>
                                     <th class="text-center">Alamat</th>
                                     <th class="text-center">Bintang</th>
                                     <th class="text-center">Actions</th>
@@ -51,16 +50,14 @@
                                 <?php foreach ($akomodasi as $val) { ?>
                                     <tr>
                                         <td class="text-center"><?= $i++; ?></td>
-
                                         <td class="text-center">
                                             <div class="thumbnail">
                                                 <div class="image view view-first">
-                                                    <img style="width: 100%; display: block;" src="/upload/akomodasi/<?= $val['foto']; ?>" alt="image" />
+                                                    <img width="150px" src="/upload/akomodasi/<?= $val['foto']; ?>" alt="image" />
                                                 </div>
                                             </div>
                                         </td>
                                         <td><?= $val['nama_akomodasi']; ?></td>
-                                        <td><?= $val['deskripsi']; ?></td>
                                         <td><?= $val['alamat_lengkap']; ?></td>
                                         <td>
                                             <center>
@@ -75,8 +72,13 @@
                                         </td>
                                         <td>
                                             <center>
-                                                <a class="btn btn-success btn-sm" href="/Akomodasi/edit/<?= $val['id_akomodasi']; ?>"><i class="fa fa-pencil"></i></a>
-                                                <a class="btn btn-danger btn-sm" href="/Akomodasi/delete/<?= $val['id_akomodasi']; ?>"><i class="fa fa-trash"></i></a>
+                                                <a class="btn btn-info btn-sm" href="/Akomodasi/detail/<?= $val['id_akomodasi']; ?>"><i class="fa fa-eye"></i></a>
+                                                <a class="btn btn-primary btn-sm" href="/Akomodasi/update/<?= $val['id_akomodasi']; ?>"><i class="fa fa-pencil"></i></a>
+                                                <form action="/Akomodasi/delete/<?= $val['id_akomodasi']; ?>" method="POST" class="d-inline">
+                                                    <?= csrf_field(); ?>
+                                                    <input type="hidden" name="_method" value="DELETE">
+                                                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data akomodasi ini?')"><i class="fa fa-trash"></i></button>
+                                                </form>
                                             </center>
                                         </td>
                                     </tr>

@@ -32,6 +32,14 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Hotel::index');
+$routes->delete('/Akomodasi/delete(:num)', 'Akomodasi::delete/$1');
+
+// =========> Filter Auth <=========
+$routes->get('/Admin', 'Admin::index', ['filter' => 'auth']);
+$routes->get('/Admin/(:any)', 'Admin::$1', ['filter' => 'auth']);
+$routes->get('/Akomodasi', 'Akomodasi::hotel', ['filter' => 'auth']);
+$routes->get('/Akomodasi/(:any)', 'Akomodasi::$1', ['filter' => 'auth']);
+// =========> End Filter Auth <=========
 
 
 // (:any)		= untuk apapun, bisa huruf maupun angka

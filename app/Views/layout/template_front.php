@@ -62,11 +62,8 @@
                             </div>
                             <div class="main_nav_container ml-auto">
                                 <ul class="main_nav_list">
-                                    <li class="main_nav_item"><a href="#">home</a></li>
-                                    <li class="main_nav_item"><a href="about.html">about us</a></li>
-                                    <li class="main_nav_item"><a href="offers.html">offers</a></li>
-                                    <li class="main_nav_item"><a href="blog.html">news</a></li>
-                                    <li class="main_nav_item"><a href="contact.html">contact</a></li>
+                                    <li class="main_nav_item"><a href="/">home</a></li>
+                                    <li class="main_nav_item"><a href="/Hotel/akomodasi">akomodasi</a></li>
                                     <?php if (session()->get('email') != null) { ?>
                                         <li class="main_nav_item"><a href="/Auth/logout">Logout</a></li>
                                     <?php } else { ?>
@@ -116,13 +113,15 @@
                 <div class="menu_close_container">
                     <div class="menu_close"></div>
                 </div>
-                <div class="logo menu_logo"><a href="#"><img src="/assets/frontend/images/logo.png" alt=""></a></div>
+                <div class="logo menu_logo"><a href="#"><img src="/assets/images/logo/logo.png" alt=""></a></div>
                 <ul>
-                    <li class="menu_item"><a href="#">home</a></li>
-                    <li class="menu_item"><a href="about.html">about us</a></li>
-                    <li class="menu_item"><a href="offers.html">offers</a></li>
-                    <li class="menu_item"><a href="blog.html">news</a></li>
-                    <li class="menu_item"><a href="contact.html">contact</a></li>
+                    <li class="menu_item"><a href="/">Home</a></li>
+                    <li class="menu_item"><a href="/Hotel/akomodasi">Akomodasi</a></li>
+                    <?php if (session()->get('email') != null) { ?>
+                        <li class="menu_item"><a href="/Auth/logout">Logout</a></li>
+                    <?php } else { ?>
+                        <li class="menu_item"><a href="/Auth">Login</a></li>
+                    <?php } ?>
                 </ul>
             </div>
         </div>

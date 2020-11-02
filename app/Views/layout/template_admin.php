@@ -43,12 +43,13 @@
     <link href="/assets/backend/build/css/custom.min.css" rel="stylesheet">
     <link href="/assets/backend/build/css/style.css" rel="stylesheet">
     <script language="JavaScript" type="text/javascript" src="/assets/backend/build/js/google_chart/loader.js"></script>
-
     <!-- Select2 -->
     <link href="/assets/backend/vendors/select2/dist/css/select2.min.css" rel="stylesheet">
-
+    <!-- Dropzone.js -->
+    <link href="/assets/backend/vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
     <!-- jQuery -->
     <script src="/assets/backend/vendors/jquery/dist/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/assets/backend/vendors/select2/dist/js/select2.min.js"></script>
 </head>
 
 <body class="nav-md">
@@ -220,7 +221,6 @@
 
     <!-- Custom Theme Scripts -->
     <script src="/assets/backend/build/js/custom.min.js"></script>
-
     <script type="text/javascript" src="/assets/backend/build/js/dst/jquery.mask.min.js"></script>
 
     <!-- Datatables -->
@@ -239,7 +239,10 @@
     <script src="/assets/backend/vendors/jszip/dist/jszip.min.js"></script>
     <script src="/assets/backend/vendors/pdfmake/build/pdfmake.min.js"></script>
     <script src="/assets/backend/vendors/pdfmake/build/vfs_fonts.js"></script>
-
+    <!-- Dropzone.js -->
+    <script src="/assets/backend/vendors/dropzone/dist/min/dropzone.min.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="/assets/backend/vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
 
     <!-- SweatAlert -->
     <script language="JavaScript" type="text/javascript" src="/assets/backend/build/js/dist/sweetalert2.all.min.js"></script>
@@ -257,7 +260,7 @@
     <script src="http://code.highcharttable.org/master/jquery.highchartTable-min.js"></script> -->
     <?php } ?>
 
-    <script language="JavaScript" type="text/javascript" src="/assets/backend/vendors/select2/dist/js/select2.min.js"></script>
+
 
 
     <script>
@@ -294,6 +297,21 @@
                 }
             });
         });
+
+        function previewImg() {
+            const foto = document.querySelector('#foto');
+            const fotoLabel = document.querySelector('.custom-file-label');
+            const imgPreview = document.querySelector('.img-preview');
+
+            fotoLabel.textContent = foto.files[0].name;
+
+            const fileFoto = new FileReader();
+            fileFoto.readAsDataURL(foto.files[0]);
+
+            fileFoto.onload = function(e) {
+                imgPreview.src = e.target.result;
+            }
+        }
     </script>
 </body>
 

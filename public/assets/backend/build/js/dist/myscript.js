@@ -12,7 +12,7 @@ if (flashData) {
 // tombol-hapus
 $('.tombol-hapus').on('click', function (e) {
 
-    e.preventDefault();   //mematikan fungsi default
+    e.preventDefault(); //mematikan fungsi default
     const hapus = $(this).attr('href');
     alert(hapus);
 

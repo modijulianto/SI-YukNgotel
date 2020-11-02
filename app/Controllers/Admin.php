@@ -12,9 +12,6 @@ class Admin extends BaseController
     public function __construct()
     {
         $this->m_admin = new M_admin();
-        // if (session()->get('email') == null) {
-        //     is_loggin();
-        // }
     }
 
     public function index()
