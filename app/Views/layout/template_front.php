@@ -65,6 +65,9 @@
                                     <li class="main_nav_item"><a href="/">home</a></li>
                                     <li class="main_nav_item"><a href="/Hotel/akomodasi">akomodasi</a></li>
                                     <?php if (session()->get('email') != null) { ?>
+                                        <?php if (session()->get('role_id') != 4) { ?>
+                                            <li class="main_nav_item"><a href="/Admin">Admin</a></li>
+                                        <?php } ?>
                                         <li class="main_nav_item"><a href="/Auth/logout">Logout</a></li>
                                     <?php } else { ?>
                                         <li class="main_nav_item"><a href="/Auth">Login</a></li>
@@ -118,6 +121,9 @@
                     <li class="menu_item"><a href="/">Home</a></li>
                     <li class="menu_item"><a href="/Hotel/akomodasi">Akomodasi</a></li>
                     <?php if (session()->get('email') != null) { ?>
+                        <?php if (session()->get('role_id') != 4) { ?>
+                            <li class="menu_item"><a href="/Admin">Admin</a></li>
+                        <?php } ?>
                         <li class="menu_item"><a href="/Auth/logout">Logout</a></li>
                     <?php } else { ?>
                         <li class="menu_item"><a href="/Auth">Login</a></li>

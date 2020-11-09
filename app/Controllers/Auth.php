@@ -36,7 +36,6 @@ class Auth extends BaseController
                     'email' => $akun['email'],
                     'foto' => $akun['foto'],
                     'role_id' => $akun['role_id'],
-                    'id_akun' => $akun['id_akun'],
                 ];
                 session()->set($data);
                 if ($akun['role_id'] == 1 | 2 | 3) {

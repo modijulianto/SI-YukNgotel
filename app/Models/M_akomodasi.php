@@ -26,13 +26,49 @@ class M_akomodasi extends Model
 
     public function getAkomodasi_byId($id)
     {
-        $query = $this->db->table('tb_akomodasi')->where('id_akomodasi', $id)->get();
+        $query = $this->db->table('tb_akomodasi')->join('tb_tipeAkomodasi', 'tb_tipeAkomodasi.id_tipeAkomodasi=tb_akomodasi.id_tipeAkomodasi')->where('id_akomodasi', $id)->get();
+        return $query->getRowArray();
+    }
+
+    public function getTipeAkomodasi_byId($id)
+    {
+        $query = $this->db->table('tb_tipeAkomodasi')->where('id_tipeAkomodasi', $id)->get();
         return $query->getRowArray();
     }
 
     public function getHotel()
     {
         $query = $this->db->table('tb_akomodasi')->orderBy('id_akomodasi', 'DESC')->getWhere('id_tipeAkomodasi=1');
+        return $query->getResultArray();
+    }
+
+    public function getApartemen()
+    {
+        $query = $this->db->table('tb_akomodasi')->orderBy('id_akomodasi', 'DESC')->getWhere('id_tipeAkomodasi=2');
+        return $query->getResultArray();
+    }
+
+    public function getVilla()
+    {
+        $query = $this->db->table('tb_akomodasi')->orderBy('id_akomodasi', 'DESC')->getWhere('id_tipeAkomodasi=3');
+        return $query->getResultArray();
+    }
+
+    public function getMotel()
+    {
+        $query = $this->db->table('tb_akomodasi')->orderBy('id_akomodasi', 'DESC')->getWhere('id_tipeAkomodasi=4');
+        return $query->getResultArray();
+    }
+
+    public function getHomestay()
+    {
+        $query = $this->db->table('tb_akomodasi')->orderBy('id_akomodasi', 'DESC')->getWhere('id_tipeAkomodasi=5');
+        return $query->getResultArray();
+    }
+
+    public function getResort()
+    {
+        $query = $this->db->table('tb_akomodasi')->orderBy('id_akomodasi', 'DESC')->getWhere('id_tipeAkomodasi=6');
         return $query->getResultArray();
     }
 

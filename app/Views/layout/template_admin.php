@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?= (isset($meta)) ? $meta : ""; ?>">
-    <meta name="author" content="Akamana Coffee">
+    <meta name="author" content="Sistem Informasi Produk Hukum">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" type="image/png" href="<?= base_url('/assets/images/logo/logo.png') ?>" style="width:16px; height:16px">
 

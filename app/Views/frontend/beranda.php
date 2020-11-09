@@ -59,7 +59,7 @@
             <?php foreach ($akomodasi as $ako) { ?>
                 <div class="col-lg-4 col-sm-6">
                     <div class="trending_item clearfix">
-                        <div class="trending_image"><img src="/assets/images/akomodasi/<?= $ako['foto']; ?>"></div>
+                        <div class="trending_image"><img src="/assets/images/akomodasi/<?= $ako['foto_tipe']; ?>"></div>
                         <div class="trending_content">
                             <div class="trending_title"><a href="#"><?= $ako['nama_tipe']; ?></a></div>
                             <div class="trending_price">From $182</div>

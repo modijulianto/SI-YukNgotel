@@ -29,6 +29,52 @@ class Akomodasi extends BaseController
         return view('data_table/akomodasi/data_hotel', $data);
     }
 
+    public function apartemen()
+    {
+        $data = [
+            'akun' => $this->m_admin->getAkun(session()->get('email')),
+            'title' => 'Akomodasi Hotel | YukNgotel',
+            'akomodasi' => $this->m_akomodasi->getApartemen(),
+        ];
+        return view('data_table/akomodasi/data_apartemen', $data);
+    }
+    public function villa()
+    {
+        $data = [
+            'akun' => $this->m_admin->getAkun(session()->get('email')),
+            'title' => 'Akomodasi Hotel | YukNgotel',
+            'akomodasi' => $this->m_akomodasi->getVilla(),
+        ];
+        return view('data_table/akomodasi/data_villa', $data);
+    }
+    public function motel()
+    {
+        $data = [
+            'akun' => $this->m_admin->getAkun(session()->get('email')),
+            'title' => 'Akomodasi Hotel | YukNgotel',
+            'akomodasi' => $this->m_akomodasi->getMotel(),
+        ];
+        return view('data_table/akomodasi/data_motel', $data);
+    }
+    public function homestay()
+    {
+        $data = [
+            'akun' => $this->m_admin->getAkun(session()->get('email')),
+            'title' => 'Akomodasi Hotel | YukNgotel',
+            'akomodasi' => $this->m_akomodasi->getHomestay(),
+        ];
+        return view('data_table/akomodasi/data_homestay', $data);
+    }
+    public function resort()
+    {
+        $data = [
+            'akun' => $this->m_admin->getAkun(session()->get('email')),
+            'title' => 'Akomodasi Hotel | YukNgotel',
+            'akomodasi' => $this->m_akomodasi->getResort(),
+        ];
+        return view('data_table/akomodasi/data_resort', $data);
+    }
+
     public function detail($id)
     {
         $data = [
@@ -93,7 +139,10 @@ class Akomodasi extends BaseController
         ]);
 
         session()->setFlashdata('pesan', 'Added');
-        return redirect()->to('/Akomodasi/hotel');
+
+        $idTipe = $this->request->getVar('tipeAkomodasi');
+        $namaTipe = $this->m_akomodasi->getTipeAkomodasi_byId($idTipe);
+        return redirect()->to('/Akomodasi/' . $namaTipe['nama_tipe']);
     }
 
     public function update($id)
@@ -105,8 +154,6 @@ class Akomodasi extends BaseController
             'validation' => $this->validation,
             'akomodasi' => $this->m_akomodasi->getAkomodasi_byId($id)
         ];
-
-
 
         return view('data_table/akomodasi/update_akomodasi', $data);
     }
@@ -154,7 +201,10 @@ class Akomodasi extends BaseController
         ]);
 
         session()->setFlashdata('pesan', 'Updated');
-        return redirect()->to('/Akomodasi/hotel');
+
+        $idTipe = $this->request->getVar('tipeAkomodasi');
+        $namaTipe = $this->m_akomodasi->getTipeAkomodasi_byId($idTipe);
+        return redirect()->to('/Akomodasi/' . $namaTipe['nama_tipe']);
     }
 
     public function delete($id)
@@ -170,6 +220,6 @@ class Akomodasi extends BaseController
 
         $this->m_akomodasi->delete($id);
         session()->setFlashdata('pesan', 'Deleted');
-        return redirect()->to('/Akomodasi/hotel');
+        return redirect()->to('/Akomodasi/' . $foto['nama_tipe']);
     }
 }

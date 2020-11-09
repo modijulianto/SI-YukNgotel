@@ -38,14 +38,14 @@
                             <img class="img-responsive avatar-view" src="/upload/akomodasi/<?= $akomodasi['foto']; ?>" width="250px" alt="Avatar" title="Change the avatar">
                         </div>
                     </div>
-                    <h3>Samuel Doe</h3>
+                    <h3><?= $akomodasi['nama_akomodasi']; ?></h3>
 
                     <ul class="list-unstyled user_data">
-                        <li><i class="fa fa-map-marker user-profile-icon"></i> San Francisco, California, USA
+                        <li><i class="fa fa-map-marker user-profile-icon"></i> <?= $akomodasi['alamat_lengkap']; ?>
                         </li>
 
                         <li>
-                            <i class="fa fa-briefcase user-profile-icon"></i> Software Engineer
+                            <i class="fa fa-briefcase user-profile-icon"></i> <?= $akomodasi['nama_tipe']; ?>
                         </li>
 
                         <li class="m-top-xs">
@@ -54,7 +54,7 @@
                         </li>
                     </ul>
 
-                    <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit Profile</a>
+                    <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit</a>
                     <br />
 
                     <!-- start skills -->

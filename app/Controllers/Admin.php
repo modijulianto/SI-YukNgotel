@@ -228,7 +228,7 @@ class Admin extends BaseController
                 ]);
 
                 $msg = [
-                    'sukses' => 'Data Admin has been saved.'
+                    'sukses' => 'Data Tentang  has been saved.'
                 ];
             }
             echo json_encode($msg);
