@@ -39,6 +39,8 @@ $routes->get('/Admin', 'Admin::index', ['filter' => 'auth']);
 $routes->get('/Admin/(:any)', 'Admin::$1', ['filter' => 'auth']);
 $routes->get('/Akomodasi', 'Akomodasi::hotel', ['filter' => 'auth']);
 $routes->get('/Akomodasi/(:any)', 'Akomodasi::$1', ['filter' => 'auth']);
+$routes->get('/Room', 'Room::add', ['filter' => 'auth']);
+$routes->get('/Room/(:any)', 'Room::$1', ['filter' => 'auth']);
 // =========> End Filter Auth <=========
 
 

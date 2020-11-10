@@ -23,7 +23,6 @@
                         <?= csrf_field(); ?>
                         <input type="hidden" name="id" value="<?= $akomodasi['id_akomodasi']; ?>">
                         <input type="hidden" name="fotoLama" value="<?= $akomodasi['foto']; ?>">
-                        <input type="text" name="segment" value="<?= session()->get('segment'); ?>">
                         <div class="col-md-4 col-sm-4  profile_left">
                             <div class="profile_img">
                                 <div id="crop-avatar">

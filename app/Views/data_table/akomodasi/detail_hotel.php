@@ -41,20 +41,19 @@
                     <h3><?= $akomodasi['nama_akomodasi']; ?></h3>
 
                     <ul class="list-unstyled user_data">
+                        <li>
+                            <i class="fa fa-building user-profile-icon"></i> <?= $akomodasi['nama_tipe']; ?>
+                        </li>
                         <li><i class="fa fa-map-marker user-profile-icon"></i> <?= $akomodasi['alamat_lengkap']; ?>
                         </li>
-
-                        <li>
-                            <i class="fa fa-briefcase user-profile-icon"></i> <?= $akomodasi['nama_tipe']; ?>
-                        </li>
-
                         <li class="m-top-xs">
-                            <i class="fa fa-external-link user-profile-icon"></i>
-                            <a href="http://www.kimlabs.com/profile/" target="_blank">www.kimlabs.com</a>
+                            <i class="fa fa-at user-profile-icon"></i>
+                            <a href="http://www.kimlabs.com/profile/" target="_blank"><?= $akomodasi['email']; ?></a>
                         </li>
                     </ul>
 
-                    <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit</a>
+                    <a class="btn btn-success" href="/Akomodasi/update/<?= $akomodasi['id_akomodasi']; ?>"><i class="fa fa-edit m-right-xs"></i>Edit</a>
+                    <a class="btn btn-primary" href="/Room/add/<?= $akomodasi['id_akomodasi']; ?>"><i class="fa fa-plus m-right-xs"></i>Tambah Kamar</a>
                     <br />
 
                     <!-- start skills -->

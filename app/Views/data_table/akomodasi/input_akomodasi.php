@@ -21,7 +21,6 @@
                 <div class="x_content">
                     <form action="/Akomodasi/save" method="POST" enctype="multipart/form-data" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                         <?= csrf_field(); ?>
-                        <input type="text" name="segment" value="<?= session()->get('segment'); ?>">
                         <div class="col-md-4 col-sm-4  profile_left">
                             <div class="profile_img">
                                 <div id="crop-avatar">
