@@ -26,8 +26,94 @@ class Room extends BaseController
         $data = [
             'akun' => $this->m_admin->getAkun(session()->get('email')),
             'title' => 'Tambah Data Kamar Hotel | YukNgotel',
-            'akomodasi' => $this->m_akomodasi->getHotel(),
+            'akomodasi' => $this->m_akomodasi->getAkomodasi_byId($id),
+            'validation' => $this->validation,
+            'tipeKamar' => $this->m_room->getTipeKamar(),
         ];
         return view('data_table/kamar/input_kamar', $data);
+    }
+
+    public function save_room($id)
+    {
+        if (!$this->validate([
+            'noKamar' => 'required',
+            'tarif' => 'required|numeric',
+            'keterangan' => 'required',
+            'max_guest' => 'required',
+        ])) {
+            // return redirect()->to('/Akomodasi/add')->withInput()->with('validation', $this->validation);
+            return redirect()->to('/Room/add/' . $id)->withInput();
+        }
+        // dd($id);
+
+        $this->m_room->save([
+            'no_kamar' => $this->request->getVar('noKamar'),
+            'id_akomodasi' => $id,
+            'id_tipeKamar' => $this->request->getVar('tipeKamar'),
+            'tarif' => $this->request->getVar('tarif'),
+            'keterangan' => $this->request->getVar('keterangan'),
+            'max_guest' => $this->request->getVar('max_guest'),
+            'foto_kamar' => "default.jpg",
+            'status' => 'V'
+        ]);
+
+        session()->setFlashdata('pesan', 'Added');
+        return redirect()->to('/Akomodasi/detail/' . $id);
+    }
+
+    public function update($id)
+    {
+        $data = [
+            'akun' => $this->m_admin->getAkun(session()->get('email')),
+            'title' => 'Tambah Data Kamar Hotel | YukNgotel',
+            'kamar' => $this->m_room->getKamarById($id),
+            'validation' => $this->validation,
+            'tipeKamar' => $this->m_room->getTipeKamar(),
+        ];
+        return view('data_table/kamar/update_kamar', $data);
+    }
+
+    public function save_update($id)
+    {
+        if (!$this->validate([
+            'noKamar' => 'required',
+            'tarif' => 'required|numeric',
+            'keterangan' => 'required',
+            'max_guest' => 'required',
+        ])) {
+            // return redirect()->to('/Akomodasi/add')->withInput()->with('validation', $this->validation);
+            return redirect()->to('/Room/add/' . $id)->withInput();
+        }
+        // dd($id);
+
+        $this->m_room->save([
+            'id_kamar' => $id,
+            'no_kamar' => $this->request->getVar('noKamar'),
+            'id_tipeKamar' => $this->request->getVar('tipeKamar'),
+            'tarif' => $this->request->getVar('tarif'),
+            'keterangan' => $this->request->getVar('keterangan'),
+            'max_guest' => $this->request->getVar('max_guest'),
+            'foto_kamar' => "default.jpg"
+        ]);
+
+        session()->setFlashdata('pesan', 'Added');
+        return redirect()->to('/Akomodasi/detail/' . $this->request->getVar('id_akomodasi'));
+    }
+
+    public function delete($id)
+    {
+        // get foto berdasarkan id
+        $foto = $this->m_room->getKamarById($id);
+        $id_Akomodasi = $foto['id_akomodasi'];
+
+        // cek jika file gambar default.jpg
+        if ($foto['foto_kamar'] != 'default.jpg') {
+            // hapus foto akomodasi
+            unlink('upload/kamar/' . $foto['foto_kamar']);
+        }
+
+        $this->m_room->delete($id);
+        session()->setFlashdata('pesan', 'Deleted');
+        return redirect()->to('/Akomodasi/detail/' . $id_Akomodasi);
     }
 }

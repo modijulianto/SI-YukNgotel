@@ -7,7 +7,9 @@
         <h3>DETAIL AKOMODASI</h3>
     </div>
 </div>
-
+<?php if (session()->getFlashdata('pesan')) : ?>
+    <div class="flash-data" data-flashdata="<?= session()->getFlashdata('pesan'); ?>"></div>
+<?php endif; ?>
 <div class="clearfix"></div>
 
 <div class="row">
