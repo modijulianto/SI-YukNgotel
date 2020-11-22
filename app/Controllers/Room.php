@@ -35,11 +35,13 @@ class Room extends BaseController
 
     public function save_room($id)
     {
+        dd($_FILES['foto']['name']);
         if (!$this->validate([
             'noKamar' => 'required',
             'tarif' => 'required|numeric',
             'keterangan' => 'required',
-            'max_guest' => 'required',
+            'luas_kamar' => 'required|numeric',
+            'max_guest' => 'required|numeric',
         ])) {
             // return redirect()->to('/Akomodasi/add')->withInput()->with('validation', $this->validation);
             return redirect()->to('/Room/add/' . $id)->withInput();
@@ -52,6 +54,7 @@ class Room extends BaseController
             'id_tipeKamar' => $this->request->getVar('tipeKamar'),
             'tarif' => $this->request->getVar('tarif'),
             'keterangan' => $this->request->getVar('keterangan'),
+            'luas_kamar' => $this->request->getVar('luas_kamar'),
             'max_guest' => $this->request->getVar('max_guest'),
             'foto_kamar' => "default.jpg",
             'status' => 'V'
@@ -79,7 +82,8 @@ class Room extends BaseController
             'noKamar' => 'required',
             'tarif' => 'required|numeric',
             'keterangan' => 'required',
-            'max_guest' => 'required',
+            'luas_kamar' => 'required|numeric',
+            'max_guest' => 'required|numeric',
         ])) {
             // return redirect()->to('/Akomodasi/add')->withInput()->with('validation', $this->validation);
             return redirect()->to('/Room/add/' . $id)->withInput();
@@ -92,6 +96,7 @@ class Room extends BaseController
             'id_tipeKamar' => $this->request->getVar('tipeKamar'),
             'tarif' => $this->request->getVar('tarif'),
             'keterangan' => $this->request->getVar('keterangan'),
+            'luas_kamar' => $this->request->getVar('luas_kamar'),
             'max_guest' => $this->request->getVar('max_guest'),
             'foto_kamar' => "default.jpg"
         ]);

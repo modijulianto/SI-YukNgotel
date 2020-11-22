@@ -18,8 +18,8 @@
             </div>
             <div class="x_content">
                 <form action="/Room/save_update/<?= $kamar['id_kamar']; ?>" method="POST" enctype="multipart/form-data">
-                    <input type="text" name="id_akomodasi" value="<?= $kamar['id_akomodasi']; ?>"><br><br><br>
-                    <input type="text" id="jumlah-img" value="1"><br><br><br>
+                    <input type="hidden" name="id_akomodasi" value="<?= $kamar['id_akomodasi']; ?>"><br>
+                    <input type="hidden" id="jumlah-img" value="1">
                     <div class="row">
                         <div class="col-md-12">
                             <!-- <div style="border:1px solid white;height:200px;overflow-y:hidden;overflow-x:scroll;">
@@ -91,16 +91,29 @@
                                 <label class="col-form-label col-md-2 col-sm-2" for="keterangan">Keterangan <span class="required">*</span>
                                 </label>
                                 <div class="col-md col-sm ">
-                                    <textarea class="form-control <?= ($validation->hasError('keterangan')) ? 'is-invalid' : ''; ?>" name="keterangan" rows="3" placeholder="Masukkan keterangan akomodasi"><?= (old('keterangan')) ? old('keterangan') : $kamar['keterangan']; ?></textarea>
+                                    <textarea class="form-control <?= ($validation->hasError('keterangan')) ? 'is-invalid' : ''; ?>" name="keterangan" rows="3" placeholder="Masukkan keterangan kamar"><?= (old('keterangan')) ? old('keterangan') : $kamar['keterangan']; ?></textarea>
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('keterangan'); ?>
                                     </div>
                                 </div>
                             </div>
                             <div class="row form-group">
+                                <label class="col-form-label col-md-2 col-sm-2" for="luas_kamar">Luas Kamar <span class="required">*</span>
+                                </label>
+                                <div class="col-md-4 col-sm-4 ">
+                                    <input type="number" id="luas_kamar" name="luas_kamar" class="form-control <?= ($validation->hasError('luas_kamar')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan luas kamar" value="<?= (old('luas_kamar')) ? old('luas_kamar') : $kamar['luas_kamar']; ?>">
+                                    <div class="invalid-feedback">
+                                        <?= $validation->getError('luas_kamar'); ?>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <h2>M<sup>2</sup></h2>
+                                </div>
+                            </div>
+                            <div class="row form-group">
                                 <label class="col-form-label col-md-2 col-sm-2" for="max_guest">Jumlah Tamu Maksimal <span class="required">*</span>
                                 </label>
-                                <div class="col-md col-sm ">
+                                <div class="col-md-4 col-sm-4 ">
                                     <input type="number" id="max_guest" name="max_guest" class="form-control <?= ($validation->hasError('max_guest')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan max_guest kamar" value="<?= (old('max_guest')) ? old('max_guest') : $kamar['max_guest']; ?>">
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('max_guest'); ?>

@@ -24,6 +24,15 @@ class Hotel extends BaseController
 		return view('frontend/beranda', $data);
 	}
 
+	public function old()
+	{
+		$data = [
+			'title' => "Satu Aplikasi untuk Booking Hotel Termurah | YukNgotel",
+			'akomodasi' => $this->m_akomodasi->getTipeAkomodasi()
+		];
+		return view('frontend/beranda1', $data);
+	}
+
 	//--------------------------------------------------------------------
 
 }

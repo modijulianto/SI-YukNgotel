@@ -26,3 +26,11 @@
 .rating_5 i:nth-child(3){color: #fbb53d;}
 .rating_5 i:nth-child(4){color: #fa9e1b;}
 .rating_5 i:nth-child(5){color: #ef910a;}
+
+.list-kamar-hotel {
+	margin: 10px;
+}
+
+/* .img-kamar img {
+	width: 200px;
+} */

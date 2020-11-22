@@ -8,7 +8,7 @@ class M_room extends Model
 {
     protected $table = 'tb_kamar';
     protected $primaryKey = 'id_kamar';
-    protected $allowedFields = ['no_kamar', 'id_akomodasi', 'id_tipeKamar', 'tarif', 'keterangan', 'max_guest', 'foto_kamar', 'status'];
+    protected $allowedFields = ['no_kamar', 'id_akomodasi', 'id_tipeKamar', 'tarif', 'keterangan', 'luas_kamar', 'max_guest', 'foto_kamar', 'status'];
 
     public function __construct()
     {

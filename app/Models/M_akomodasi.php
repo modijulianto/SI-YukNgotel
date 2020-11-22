@@ -36,6 +36,12 @@ class M_akomodasi extends Model
         return $query->getRowArray();
     }
 
+    public function getKamarByIdAkomodasi($id)
+    {
+        $query = $this->db->table('tb_kamar')->where('id_akomodasi', $id)->join('tb_tipeKamar', 'tb_tipeKamar.id_tipeKamar=tb_kamar.id_tipeKamar')->get();
+        return $query->getResultArray();
+    }
+
     public function getHotel()
     {
         $query = $this->db->table('tb_akomodasi')->orderBy('id_akomodasi', 'DESC')->getWhere('id_tipeAkomodasi=1');

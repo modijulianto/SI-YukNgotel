@@ -219,10 +219,6 @@
     <!-- jQuery custom content scroller -->
     <script src="/assets/backend/vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <!-- Custom Theme Scripts -->
-    <script src="/assets/backend/build/js/custom.min.js"></script>
-    <script type="text/javascript" src="/assets/backend/build/js/dst/jquery.mask.min.js"></script>
-
     <!-- Datatables -->
     <script src="/assets/backend/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
     <script src="/assets/backend/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
@@ -251,6 +247,11 @@
     <script language="JavaScript" type="text/javascript" src="/assets/backend/build/js/script.js"></script>
     <script language="JavaScript" type="text/javascript" src="/assets/backend/build/js/script-export.js"></script>
     <script language="JavaScript" type="text/javascript" src="/assets/backend/build/js/google_chart/loader.js"></script>
+
+
+    <!-- Custom Theme Scripts -->
+    <script src="/assets/backend/build/js/custom.min.js"></script>
+    <script type="text/javascript" src="/assets/backend/build/js/dst/jquery.mask.min.js"></script>
 
     <?php if (isset($chart) == TRUE) { ?>
         <!-- High Chart -->
@@ -304,21 +305,6 @@
             const imgPreview = document.querySelector('.img-preview');
 
             fotoLabel.textContent = foto.files[0].name;
-
-            const fileFoto = new FileReader();
-            fileFoto.readAsDataURL(foto.files[0]);
-
-            fileFoto.onload = function(e) {
-                imgPreview.src = e.target.result;
-            }
-        }
-
-        function previewImgRoom() {
-            const foto = document.querySelector('#foto[]');
-            const fotoLabel = document.querySelector('.custom-file-label');
-            const imgPreview = document.querySelector('.img-preview');
-
-            fotoLabel.textContent = foto.files[0].name[];
 
             const fileFoto = new FileReader();
             fileFoto.readAsDataURL(foto.files[0]);

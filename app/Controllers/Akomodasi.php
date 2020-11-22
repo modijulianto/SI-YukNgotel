@@ -80,6 +80,7 @@ class Akomodasi extends BaseController
         $data = [
             'akun' => $this->m_admin->getAkun(session()->get('email')),
             'akomodasi' => $this->m_akomodasi->getAkomodasi_byId($id),
+            'kamar' => $this->m_akomodasi->getKamarByIdAkomodasi($id),
             'title' => 'Akomodasi Hotel | YukNgotel',
         ];
         return view('data_table/akomodasi/detail_hotel', $data);
