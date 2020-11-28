@@ -79,7 +79,7 @@
                     <nav class="classy-navbar justify-content-between" id="robertoNav">
 
                         <!-- Logo -->
-                        <a class="nav-brand" href="index.html"><img src="/assets/images/logo/h_logo.png" width="200px" alt=""></a>
+                        <a class="nav-brand" href="/"><img src="/assets/images/logo/h_logo.png" width="200px" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">

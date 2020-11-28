@@ -20,9 +20,9 @@
                 <form action="/Room/save_room/<?= $akomodasi['id_akomodasi']; ?>" method="POST" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
-                            <div name="foto" action="/Room/save_room/<?= $akomodasi['id_akomodasi']; ?>" class="dropzone"></div>
+                            <div action="/Room/save_room/<?= $akomodasi['id_akomodasi']; ?>" class="dropzone"></div>
                         </div>
-                        <div class="col-md-12 mt-3">
+                        <div class="col-md-12">
                             <input type="hidden" id="jumlah-img" value="1"><br><br><br>
                             <div class="row form-group mt-4">
                                 <label class="col-form-label col-md-2 col-sm-2" for="nama">Tipe Kamar <span class="required">*</span>

@@ -33,6 +33,15 @@ class Hotel extends BaseController
 		return view('frontend/beranda1', $data);
 	}
 
+	public function cari()
+	{
+		$data = [
+			'title' => "Pencarian Data Akomodasi",
+			'akomodasi' => $this->m_akomodasi->getTipeAkomodasi()
+		];
+		return view('frontend/hasil_cari', $data);
+	}
+
 	//--------------------------------------------------------------------
 
 }
