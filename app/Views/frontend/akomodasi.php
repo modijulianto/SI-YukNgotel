@@ -7,11 +7,11 @@
         <div class="row h-100 align-items-center">
             <div class="col-12">
                 <div class="breadcrumb-content text-center">
-                    <h2 class="page-title">Our</h2>
+                    <h2 class="page-title">Our <?= $tipe->nama_tipe; ?></h2>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">asd</li>
+                            <li class="breadcrumb-item active" aria-current="page"><?= $tipe->nama_tipe; ?></li>
                         </ol>
                     </nav>
                 </div>

@@ -1,0 +1,91 @@
+CRITICAL - 2020-12-06 00:45:20 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getResult() must be of the type string, null given, called in /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php on line 464
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(464): CodeIgniter\Database\BaseResult->getResult()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(1184): CodeIgniter\Model->findAll()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(54): CodeIgniter\Model->paginate()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-12-06 00:55:21 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getResult() must be of the type string, null given, called in /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php on line 464
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(464): CodeIgniter\Database\BaseResult->getResult()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(1184): CodeIgniter\Model->findAll()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(54): CodeIgniter\Model->paginate()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-12-06 00:57:00 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getResult() must be of the type string, null given, called in /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php on line 464
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(464): CodeIgniter\Database\BaseResult->getResult()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(1184): CodeIgniter\Model->findAll()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(54): CodeIgniter\Model->paginate()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-12-06 01:48:19 --> Call to undefined method App\Models\M_hotel::getTipeAkomodasi
+#0 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(56): CodeIgniter\Model->__call()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2020-12-06 01:48:20 --> Call to undefined method App\Models\M_hotel::getTipeAkomodasi
+#0 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(56): CodeIgniter\Model->__call()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2020-12-06 01:48:31 --> Call to undefined method App\Models\M_hotel::getTipeAkomodasi
+#0 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(56): CodeIgniter\Model->__call()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2020-12-06 01:48:48 --> Undefined variable: tipe
+#0 /opt/lampp/htdocs/yukngotel/app/Views/frontend/akomodasi.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(59): view()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2020-12-06 01:50:23 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getResult() must be of the type string, null given, called in /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php on line 464
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(464): CodeIgniter\Database\BaseResult->getResult()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(1184): CodeIgniter\Model->findAll()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(54): CodeIgniter\Model->paginate()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-12-06 22:39:44 --> Undefined property: App\Controllers\Hotel::$M_hotel
+#0 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->cari()
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2020-12-06 22:41:05 --> Undefined property: App\Controllers\Hotel::$M_hotel
+#0 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->cari()
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#6 {main}

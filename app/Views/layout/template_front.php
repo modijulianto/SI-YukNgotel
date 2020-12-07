@@ -58,6 +58,7 @@
                         <div class="top-header-content">
                             <!-- Top Social Area -->
                             <div class="top-social-area ml-auto">
+                                <a href="/Admin"><i class="fa fa-bar-chart"></i></a>
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
@@ -104,9 +105,6 @@
                                         </ul>
                                     </li>
                                     <?php if (session()->get('email') != null) { ?>
-                                        <?php if (session()->get('role_id') != 4) { ?>
-                                            <li><a href="/Admin/">Admin</a></li>
-                                        <?php } ?>
                                         <li><a href="/Auth/logout">Logout</a></li>
                                     <?php } else { ?>
                                         <li><a href="/Auth">Login</a></li>

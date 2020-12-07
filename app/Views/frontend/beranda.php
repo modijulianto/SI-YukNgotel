@@ -67,7 +67,7 @@
     <div class="hotel-search-form-area">
         <div class="container-fluid">
             <div class="hotel-search-form">
-                <form action="#" method="post">
+                <form action="/Hotel/cari" method="post">
                     <div class="row justify-content-between align-items-end">
                         <div class="col-6 col-md-2 col-lg">
                             <label for="destination">Destination</label>
@@ -75,11 +75,11 @@
                         </div>
                         <div class="col-6 col-md-2 col-lg">
                             <label for="checkIn">Check In</label>
-                            <input type="date" class="form-control" id="checkIn" name="checkin-date">
+                            <input type="date" class="form-control" id="checkIn" name="checkin">
                         </div>
                         <div class="col-6 col-md-2 col-lg">
                             <label for="checkOut">Check Out</label>
-                            <input type="date" class="form-control" id="checkOut" name="checkout-date">
+                            <input type="date" class="form-control" id="checkOut" name="checkout">
                         </div>
                         <div class="col-3 col-md-1">
                             <label for="adults">Guest</label>
