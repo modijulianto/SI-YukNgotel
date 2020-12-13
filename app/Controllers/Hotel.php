@@ -28,15 +28,6 @@ class Hotel extends BaseController
 		return view('frontend/beranda', $data);
 	}
 
-	public function old()
-	{
-		$data = [
-			'title' => "Satu Aplikasi untuk Booking Hotel Termurah | YukNgotel",
-			'akomodasi' => $this->m_akomodasi->getTipeAkomodasi()
-		];
-		return view('frontend/beranda1', $data);
-	}
-
 	public function cari()
 	{
 		$destination = $this->request->getVar('destination');
@@ -62,7 +53,7 @@ class Hotel extends BaseController
 		// get akomodasi sesuai dengan ID tipe akomodasi
 		$group = $this->m_hotel->getAkomodasiById($id);
 
-		$data['title'] = "Pencarian Data Akomodasi";
+		$data['title'] = "Data Akomodasi";
 		$data['akomodasi'] = $this->m_akomodasi->getTipeAkomodasi();
 		$data['hotel'] = $group->paginate(4, 'tb_akomodasi');
 		$data['pager'] = $this->m_hotel->pager;
@@ -77,7 +68,7 @@ class Hotel extends BaseController
 
 	public function rooms($id)
 	{
-		$data['title'] = "Pencarian Data Akomodasi";
+		$data['title'] = "List Kamar Hotel";
 		$data['akomodasi'] = $this->m_akomodasi->getTipeAkomodasi();
 		$data['rooms'] = $this->m_hotel->getRoomsById($id);
 		$data['nama'] = $this->m_hotel->getNamaAkomodasi($id);
@@ -89,13 +80,21 @@ class Hotel extends BaseController
 
 	public function detail($id)
 	{
-		$data['title'] = "Pencarian Data Akomodasi";
+		$data['title'] = "Detail Kamar";
 		$data['akomodasi'] = $this->m_akomodasi->getTipeAkomodasi();
 		$data['room'] = $this->m_hotel->getRoomById($id);
 		$data['max_cost'] = $this->m_hotel->getMaxCost();
 		$data['max_guest'] = $this->m_hotel->getMaxGuests();
 
 		return view('frontend/detail', $data);
+	}
+
+	public function booking($id)
+	{
+		$data['akomodasi'] = $this->m_akomodasi->getTipeAkomodasi();
+		$data['book'] = $this->m_hotel->getRoomById($id);
+
+		return view('frontend/booking', $data);
 	}
 
 	//--------------------------------------------------------------------

@@ -225,6 +225,12 @@
     <script src="/assets/frontend/js/roberto.bundle.js"></script>
     <!-- Active -->
     <script src="/assets/frontend/js/default-assets/active.js"></script>
+    <!-- NProgress -->
+    <link href="/assets/backend/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- jQuery Smart Wizard -->
+    <script src="/assets/backend/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="/assets/backend/build/js/custom.min.js"></script>
 
 </body>
 

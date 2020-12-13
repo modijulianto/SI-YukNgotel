@@ -170,7 +170,7 @@
 
                 </div>
                 <center class="mb-5">
-                    <a href="" class="btn btn-primary">Book Now</a>
+                    <a href="/Hotel/booking/<?= md5($room['id_kamar']); ?>" class="btn btn-primary">Book Now</a>
                 </center>
             </div>
 
