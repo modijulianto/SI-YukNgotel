@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 02, 2020 at 04:00 PM
+-- Generation Time: Dec 13, 2020 at 01:51 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -21,6 +21,149 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_ngotelkuy`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Hotel`
+--
+
+CREATE TABLE `Hotel` (
+  `id_hotel` int(11) UNSIGNED NOT NULL,
+  `nama_hotel` varchar(255) NOT NULL,
+  `alamat_hotel` varchar(255) NOT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `Hotel`
+--
+
+INSERT INTO `Hotel` (`id_hotel`, `nama_hotel`, `alamat_hotel`, `created_at`, `updated_at`) VALUES
+(1, 'PD Santoso', 'Jr. Qrisdoren No. 385, Tebing Tinggi 10925, SumSel', '2005-10-23 04:13:40', '2020-11-28 00:33:12'),
+(2, 'UD Adriansyah Habibi', 'Gg. Dr. Junjunan No. 710, Cimahi 90982, SulUt', '2010-12-24 00:33:27', '2020-11-28 00:33:12'),
+(3, 'PT Nababan', 'Jr. Basudewo No. 205, Singkawang 71031, NTB', '2017-04-07 20:41:13', '2020-11-28 00:33:12'),
+(4, 'UD Hutagalung Zulaika (Persero) Tbk', 'Kpg. Baan No. 57, Bandar Lampung 37289, Riau', '1992-04-13 04:06:05', '2020-11-28 00:33:12'),
+(5, 'PT Najmudin Pratiwi', 'Jln. Baya Kali Bungur No. 932, Subulussalam 88080, KepR', '1986-05-12 16:53:59', '2020-11-28 00:33:12'),
+(6, 'PD Pratiwi Hidayanto', 'Dk. Jamika No. 196, Gunungsitoli 89033, PapBar', '1970-02-10 04:26:20', '2020-11-28 00:33:12'),
+(7, 'Perum Aryani Hutagalung Tbk', 'Psr. Wahid Hasyim No. 250, Ternate 65977, KalUt', '1993-03-21 15:06:03', '2020-11-28 00:33:12'),
+(8, 'UD Novitasari Hastuti (Persero) Tbk', 'Kpg. Rajawali No. 831, Lubuklinggau 48676, DKI', '2014-04-03 12:02:50', '2020-11-28 00:33:12'),
+(9, 'PD Irawan Safitri', 'Ki. Kalimalang No. 672, Pariaman 63227, Maluku', '2000-05-08 00:57:25', '2020-11-28 00:33:13'),
+(10, 'Perum Pertiwi Najmudin Tbk', 'Ki. Ikan No. 8, Jambi 86860, KepR', '1990-12-22 15:03:52', '2020-11-28 00:33:13'),
+(11, 'PT Yulianti', 'Ki. Dipatiukur No. 368, Batam 80151, Aceh', '1995-09-26 19:07:43', '2020-11-28 00:33:13'),
+(12, 'PD Ardianto Hakim Tbk', 'Kpg. Setia Budi No. 371, Bogor 92526, Riau', '1983-05-14 22:02:34', '2020-11-28 00:33:13'),
+(13, 'PD Zulaika Palastri (Persero) Tbk', 'Ki. Pasteur No. 982, Banjarbaru 31149, PapBar', '2020-10-16 01:36:40', '2020-11-28 00:33:13'),
+(14, 'CV Zulkarnain Rahayu', 'Ds. Jend. A. Yani No. 805, Tangerang Selatan 64530, SulSel', '1994-07-30 04:01:44', '2020-11-28 00:33:13'),
+(15, 'CV Uyainah (Persero) Tbk', 'Ds. Babadak No. 484, Malang 74590, Bali', '2019-12-31 14:52:13', '2020-11-28 00:33:13'),
+(16, 'CV Haryanto Permata', 'Kpg. Lada No. 727, Probolinggo 76336, SulSel', '2013-05-26 05:13:47', '2020-11-28 00:33:13'),
+(17, 'Perum Widiastuti (Persero) Tbk', 'Ki. Kalimantan No. 437, Tangerang 66787, Papua', '1985-07-14 05:00:44', '2020-11-28 00:33:13'),
+(18, 'PD Astuti Tbk', 'Ds. Sutoyo No. 753, Binjai 54173, Papua', '2018-11-22 12:20:40', '2020-11-28 00:33:13'),
+(19, 'PD Handayani (Persero) Tbk', 'Ki. Baung No. 703, Sorong 86203, SumUt', '1993-05-06 22:58:27', '2020-11-28 00:33:13'),
+(20, 'UD Suwarno Tbk', 'Gg. Hasanuddin No. 6, Blitar 74489, Lampung', '1998-03-12 01:56:13', '2020-11-28 00:33:13'),
+(21, 'PT Utami Narpati', 'Gg. B.Agam Dlm No. 731, Sawahlunto 93712, KalTim', '2002-08-31 06:21:43', '2020-11-28 00:33:13'),
+(22, 'Perum Astuti Uyainah', 'Dk. Bank Dagang Negara No. 223, Medan 64819, NTB', '1990-04-11 01:12:23', '2020-11-28 00:33:13'),
+(23, 'CV Marpaung', 'Psr. Wora Wari No. 296, Jambi 28355, KalTim', '1998-02-01 18:45:50', '2020-11-28 00:33:13'),
+(24, 'PT Tarihoran Tbk', 'Kpg. K.H. Wahid Hasyim (Kopo) No. 813, Administrasi Jakarta Selatan 89990, SumUt', '1996-01-01 12:43:00', '2020-11-28 00:33:13'),
+(25, 'CV Sitorus Handayani', 'Dk. Imam No. 136, Surakarta 71728, DKI', '1983-11-18 07:53:00', '2020-11-28 00:33:13'),
+(26, 'UD Hakim Safitri', 'Gg. Suryo No. 390, Sibolga 91605, SulSel', '1991-05-06 10:47:32', '2020-11-28 00:33:13'),
+(27, 'UD Nasyidah Hutagalung', 'Ds. Basmol Raya No. 436, Banjarbaru 32388, NTT', '1975-04-02 14:27:36', '2020-11-28 00:33:13'),
+(28, 'UD Pratiwi Adriansyah', 'Ds. Kali No. 89, Subulussalam 81612, JaTeng', '1971-07-15 03:05:40', '2020-11-28 00:33:13'),
+(29, 'CV Mansur', 'Kpg. B.Agam Dlm No. 148, Metro 71835, KalTim', '2008-12-23 22:35:02', '2020-11-28 00:33:14'),
+(30, 'Perum Prakasa Hassanah (Persero) Tbk', 'Kpg. Untung Suropati No. 627, Sungai Penuh 74688, Papua', '2008-03-29 14:58:31', '2020-11-28 00:33:14'),
+(31, 'Perum Uwais', 'Jr. Baabur Royan No. 769, Palopo 53621, Bengkulu', '1989-12-01 20:22:53', '2020-11-28 00:33:14'),
+(32, 'UD Wahyuni Melani', 'Dk. Gambang No. 50, Lhokseumawe 23571, JaTim', '2005-02-09 23:22:59', '2020-11-28 00:33:14'),
+(33, 'CV Fujiati (Persero) Tbk', 'Kpg. Sentot Alibasa No. 474, Sukabumi 32330, PapBar', '1971-08-20 02:48:46', '2020-11-28 00:33:14'),
+(34, 'Perum Suwarno Tbk', 'Jr. Flora No. 105, Semarang 52817, BaBel', '1993-06-13 22:03:20', '2020-11-28 00:33:14'),
+(35, 'PD Thamrin Najmudin', 'Ki. Otista No. 965, Surakarta 46106, NTT', '1997-02-19 20:01:11', '2020-11-28 00:33:14'),
+(36, 'Perum Samosir', 'Jr. Pattimura No. 922, Batu 32742, Bali', '1983-07-20 09:58:14', '2020-11-28 00:33:14'),
+(37, 'UD Hutapea Lestari Tbk', 'Ds. Baranang Siang Indah No. 794, Kediri 42318, SumUt', '2003-04-29 21:14:18', '2020-11-28 00:33:14'),
+(38, 'Perum Prayoga (Persero) Tbk', 'Gg. Tubagus Ismail No. 448, Administrasi Jakarta Utara 42652, SulSel', '1975-10-15 06:12:08', '2020-11-28 00:33:14'),
+(39, 'Perum Sudiati Permadi', 'Kpg. Ikan No. 767, Cimahi 90726, KalBar', '2020-11-01 16:20:01', '2020-11-28 00:33:14'),
+(40, 'PD Iswahyudi', 'Kpg. Wahid Hasyim No. 522, Semarang 75252, Papua', '1983-12-18 03:23:25', '2020-11-28 00:33:14'),
+(41, 'PD Ardianto Widodo Tbk', 'Gg. Kalimantan No. 571, Solok 76647, Gorontalo', '1977-04-11 22:17:11', '2020-11-28 00:33:14'),
+(42, 'Perum Najmudin', 'Ds. Ahmad Dahlan No. 460, Palangka Raya 98039, SulSel', '2016-09-02 03:02:34', '2020-11-28 00:33:14'),
+(43, 'UD Zulaika (Persero) Tbk', 'Ki. Supono No. 22, Bau-Bau 36234, JaTeng', '2001-05-04 19:22:56', '2020-11-28 00:33:14'),
+(44, 'Perum Permata (Persero) Tbk', 'Ds. Raden No. 647, Banjarmasin 13511, SulBar', '2013-12-28 20:32:55', '2020-11-28 00:33:14'),
+(45, 'CV Palastri Nababan', 'Gg. Imam Bonjol No. 877, Pekanbaru 70790, DKI', '1984-01-05 12:03:37', '2020-11-28 00:33:14'),
+(46, 'UD Safitri', 'Dk. Halim No. 367, Padangsidempuan 13313, SulSel', '1994-11-28 13:01:40', '2020-11-28 00:33:14'),
+(47, 'CV Marbun Haryanto Tbk', 'Ki. Yap Tjwan Bing No. 560, Manado 97446, SumBar', '1995-12-07 17:55:06', '2020-11-28 00:33:14'),
+(48, 'PT Nainggolan Tbk', 'Ki. Bass No. 640, Bukittinggi 17780, Bengkulu', '2005-12-20 09:20:23', '2020-11-28 00:33:14'),
+(49, 'UD Hidayat', 'Jr. M.T. Haryono No. 126, Subulussalam 99705, Maluku', '1990-10-06 04:02:50', '2020-11-28 00:33:14'),
+(50, 'Perum Yulianti Winarsih', 'Jln. HOS. Cjokroaminoto (Pasirkaliki) No. 937, Madiun 78710, DIY', '2015-05-14 02:17:34', '2020-11-28 00:33:14'),
+(51, 'Perum Januar Hariyah (Persero) Tbk', 'Psr. B.Agam Dlm No. 831, Tangerang Selatan 36240, SulBar', '1995-10-27 08:30:57', '2020-11-28 00:33:14'),
+(52, 'Perum Ardianto', 'Kpg. Baranangsiang No. 247, Metro 61359, PapBar', '2008-09-17 16:59:32', '2020-11-28 00:33:14'),
+(53, 'CV Putra Pudjiastuti Tbk', 'Dk. Moch. Ramdan No. 636, Sukabumi 12501, SulUt', '2008-05-22 06:35:47', '2020-11-28 00:33:14'),
+(54, 'PD Situmorang', 'Jr. Bambu No. 5, Padangsidempuan 26467, Aceh', '1979-01-20 17:41:49', '2020-11-28 00:33:15'),
+(55, 'Perum Prasasta Permata Tbk', 'Jln. Kiaracondong No. 775, Batam 22807, SumUt', '1970-12-08 00:51:43', '2020-11-28 00:33:15'),
+(56, 'PT Pratiwi Habibi', 'Gg. Tambak No. 421, Bandung 40331, SulTeng', '2014-03-08 01:23:59', '2020-11-28 00:33:15'),
+(57, 'UD Marpaung Safitri', 'Jr. Suharso No. 787, Gunungsitoli 57979, KalUt', '2004-12-13 04:29:59', '2020-11-28 00:33:15'),
+(58, 'PD Haryanti Waskita Tbk', 'Ds. Ciumbuleuit No. 991, Padangsidempuan 14196, MalUt', '2013-02-21 19:06:31', '2020-11-28 00:33:15'),
+(59, 'PD Latupono', 'Kpg. Ciwastra No. 635, Madiun 90728, SumBar', '1992-09-07 17:17:45', '2020-11-28 00:33:15'),
+(60, 'UD Nurdiyanti', 'Kpg. Bacang No. 606, Madiun 76485, DKI', '2002-01-21 00:52:57', '2020-11-28 00:33:15'),
+(61, 'UD Latupono Nashiruddin', 'Gg. Kebangkitan Nasional No. 648, Banda Aceh 63589, KepR', '1976-04-23 13:05:53', '2020-11-28 00:33:15'),
+(62, 'PD Anggraini', 'Dk. Pahlawan No. 321, Pagar Alam 93755, KalUt', '2012-04-17 01:18:20', '2020-11-28 00:33:15'),
+(63, 'Perum Rajata Maryati (Persero) Tbk', 'Psr. Bakhita No. 849, Bengkulu 97540, SulUt', '2018-05-25 12:30:35', '2020-11-28 00:33:15'),
+(64, 'PT Tarihoran Tbk', 'Dk. Ciwastra No. 50, Binjai 98917, Aceh', '1987-08-28 21:46:13', '2020-11-28 00:33:15'),
+(65, 'PD Hariyah (Persero) Tbk', 'Dk. HOS. Cjokroaminoto (Pasirkaliki) No. 961, Prabumulih 50482, Lampung', '2001-12-23 09:26:02', '2020-11-28 00:33:15'),
+(66, 'PD Fujiati Hariyah', 'Jr. Baung No. 142, Administrasi Jakarta Selatan 40064, KalBar', '2013-04-18 03:02:56', '2020-11-28 00:33:15'),
+(67, 'PT Mahendra Latupono Tbk', 'Jln. Industri No. 289, Solok 32961, NTB', '2001-05-22 08:49:01', '2020-11-28 00:33:15'),
+(68, 'UD Wibisono', 'Ki. Baya Kali Bungur No. 161, Magelang 62217, JaTeng', '2008-12-25 07:57:05', '2020-11-28 00:33:15'),
+(69, 'UD Adriansyah Permata', 'Gg. Bagonwoto  No. 277, Jambi 65449, KalTeng', '1998-01-19 00:38:16', '2020-11-28 00:33:15'),
+(70, 'PT Ramadan Wijayanti', 'Ki. Abdul Rahmat No. 708, Bukittinggi 90012, KalTim', '1997-01-21 07:47:00', '2020-11-28 00:33:15'),
+(71, 'CV Santoso', 'Jln. Tangkuban Perahu No. 156, Ambon 79669, KalUt', '1975-02-05 21:55:06', '2020-11-28 00:33:15'),
+(72, 'CV Tamba Sinaga Tbk', 'Dk. Kebangkitan Nasional No. 365, Pagar Alam 98924, BaBel', '2003-03-11 23:50:30', '2020-11-28 00:33:15'),
+(73, 'UD Nurdiyanti (Persero) Tbk', 'Kpg. Bahagia  No. 275, Banjarmasin 66068, KalTeng', '1999-10-07 07:44:50', '2020-11-28 00:33:15'),
+(74, 'PD Hutagalung Saragih Tbk', 'Jln. Adisumarmo No. 202, Kendari 84441, SulSel', '1997-01-19 20:30:17', '2020-11-28 00:33:15'),
+(75, 'PD Purwanti Astuti (Persero) Tbk', 'Ki. Raden No. 228, Padangsidempuan 20361, KepR', '1993-03-07 10:45:20', '2020-11-28 00:33:16'),
+(76, 'PT Lazuardi Tbk', 'Ki. Bhayangkara No. 262, Blitar 33700, KalTeng', '1982-10-02 16:57:00', '2020-11-28 00:33:16'),
+(77, 'CV Yulianti Tbk', 'Ds. M.T. Haryono No. 129, Tarakan 66433, KalUt', '2009-05-10 05:02:38', '2020-11-28 00:33:16'),
+(78, 'PD Widiastuti Suwarno Tbk', 'Jr. Fajar No. 763, Pariaman 74160, BaBel', '2009-02-28 20:10:02', '2020-11-28 00:33:16'),
+(79, 'PD Adriansyah', 'Ki. Mahakam No. 430, Magelang 75725, JaBar', '1988-01-30 11:44:37', '2020-11-28 00:33:16'),
+(80, 'Perum Novitasari Anggraini Tbk', 'Jr. Katamso No. 331, Bukittinggi 33508, Banten', '1990-09-14 07:04:01', '2020-11-28 00:33:16'),
+(81, 'Perum Uyainah Wibowo (Persero) Tbk', 'Dk. Yap Tjwan Bing No. 176, Kediri 13592, DKI', '1977-08-15 00:08:36', '2020-11-28 00:33:16'),
+(82, 'Perum Sihotang Tbk', 'Jr. Sutoyo No. 900, Gorontalo 44598, JaTim', '2019-02-26 14:45:43', '2020-11-28 00:33:16'),
+(83, 'Perum Agustina', 'Ki. Sumpah Pemuda No. 363, Mataram 69022, JaTim', '1976-05-09 07:32:45', '2020-11-28 00:33:16'),
+(84, 'UD Usada Pertiwi (Persero) Tbk', 'Ki. Dr. Junjunan No. 161, Banjarmasin 27246, KalTeng', '1994-11-30 16:12:19', '2020-11-28 00:33:16'),
+(85, 'UD Namaga', 'Gg. Batako No. 449, Bima 64784, DKI', '2012-05-09 17:28:32', '2020-11-28 00:33:16'),
+(86, 'UD Putra Tbk', 'Jr. Fajar No. 680, Denpasar 61167, Jambi', '1980-04-24 03:45:46', '2020-11-28 00:33:16'),
+(87, 'UD Kuswandari', 'Jr. Tambak No. 219, Kupang 15852, BaBel', '2004-01-22 11:19:51', '2020-11-28 00:33:16'),
+(88, 'UD Wahyuni Tbk', 'Ds. Yosodipuro No. 111, Kotamobagu 39024, SumUt', '1985-10-05 22:42:42', '2020-11-28 00:33:16'),
+(89, 'UD Agustina', 'Gg. Panjaitan No. 972, Tidore Kepulauan 71841, KalSel', '2006-06-05 03:22:06', '2020-11-28 00:33:16'),
+(90, 'PT Hariyah', 'Dk. Ters. Pasir Koja No. 179, Sibolga 70510, KalSel', '1986-04-16 22:19:45', '2020-11-28 00:33:16'),
+(91, 'PT Wulandari (Persero) Tbk', 'Jr. Jaksa No. 929, Kotamobagu 87827, KalTeng', '1992-11-18 05:59:25', '2020-11-28 00:33:16'),
+(92, 'PT Tamba', 'Ki. Raden No. 483, Cilegon 68601, SulTra', '1988-10-27 06:59:09', '2020-11-28 00:33:16'),
+(93, 'PT Mayasari (Persero) Tbk', 'Ds. Bata Putih No. 416, Binjai 38738, SumUt', '2001-05-01 18:24:35', '2020-11-28 00:33:16'),
+(94, 'PD Winarsih Widiastuti', 'Jln. Adisumarmo No. 566, Administrasi Jakarta Timur 40881, SulBar', '2013-01-14 21:54:41', '2020-11-28 00:33:17'),
+(95, 'UD Fujiati', 'Gg. Tentara Pelajar No. 740, Sukabumi 15496, Gorontalo', '1991-10-02 22:28:58', '2020-11-28 00:33:17'),
+(96, 'PT Utami', 'Kpg. Barasak No. 468, Salatiga 66404, KalTeng', '2017-11-09 03:53:25', '2020-11-28 00:33:17'),
+(97, 'PT Rahimah Natsir Tbk', 'Gg. Pahlawan No. 151, Tual 36850, SumSel', '1975-07-25 08:06:16', '2020-11-28 00:33:17'),
+(98, 'PT Prakasa Yulianti (Persero) Tbk', 'Jln. Daan No. 494, Pagar Alam 33919, SumBar', '2006-07-29 14:42:01', '2020-11-28 00:33:17'),
+(99, 'PD Kurniawan', 'Kpg. Teuku Umar No. 494, Pagar Alam 54726, Banten', '1989-02-24 23:58:51', '2020-11-28 00:33:17'),
+(100, 'PT Rahmawati Usada', 'Ds. Ujung No. 5, Batu 54827, Jambi', '1972-08-04 23:24:18', '2020-11-28 00:33:17');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `migrations`
+--
+
+CREATE TABLE `migrations` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `version` varchar(255) NOT NULL,
+  `class` text NOT NULL,
+  `group` varchar(255) NOT NULL,
+  `namespace` varchar(255) NOT NULL,
+  `time` int(11) NOT NULL,
+  `batch` int(11) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `migrations`
+--
+
+INSERT INTO `migrations` (`id`, `version`, `class`, `group`, `namespace`, `time`, `batch`) VALUES
+(1, '2020-11-28-050908', 'App\\Database\\Migrations\\Hotel', 'default', 'App', 1606540727, 1);
 
 -- --------------------------------------------------------
 
@@ -49,9 +192,12 @@ CREATE TABLE `tb_akomodasi` (
 --
 
 INSERT INTO `tb_akomodasi` (`id_akomodasi`, `id_kecamatan`, `nama_akomodasi`, `id_tipeAkomodasi`, `alamat_lengkap`, `deskripsi`, `bintang`, `email`, `telepon`, `tag`, `foto`, `created_at`, `updated_at`) VALUES
-(1, 5108050, 'hotel cahya baru', 1, 'Desa Selat Banjar Witajati, Kec. Sukasada, Kab. Buleleng, Bali, Indonesia', 'hotel bagus berbintang 5', 5, 'cahayabaru@gmail.com', '08123123123', 'cahayabaru,hotel,penginapan', '1604307768_2e3370a1a26b5a5b78bd.png', '0000-00-00 00:00:00', '2020-11-02 03:02:48'),
+(1, 5108050, 'hotel cahya baru', 1, 'Desa Selat Banjar Witajati, Kec. Sukasada, Kab. Buleleng, Bali, Indonesia', 'hotel bagus berbintang 5', 5, 'cahayabaru@gmail.com', '08123123123', 'cahayabaru,hotel,penginapan', '1607754721_b763f724e3f2c83ef475.jpg', '0000-00-00 00:00:00', '2020-12-12 00:32:01'),
 (2, 0, 'hotel kemayoran', 1, 'Desa Selat Banjar Witajati, Kec. Sukasada, Kab. Buleleng, Bali, Indonesia', 'ini hotel kemayoran :D', 5, 'kemayoran@gmail.com', 'ini hotel kemayoran ', 'ini hotel kemayoran :D,wkwk,hehe,haha hihi', '1604297132_20853d615368cb89e3ed.png', '0000-00-00 00:00:00', '2020-11-02 00:05:32'),
-(9, 5108050, 'Hotel mantap', 1, 'singaraja bali', 'ini hotel keren', 5, 'hotelkeren@gmail.com', '08123123123', 'hotel,singaraja,bali,hotel keren,keren,bintang5,bintang 5', '1604307798_723588ba046e25744bca.jpeg', '2020-11-02 02:56:02', '2020-11-02 03:36:12');
+(9, 5108050, 'Hotel mantap', 1, 'singaraja bali', 'ini hotel keren', 5, 'hotelkeren@gmail.com', '08123123123', 'hotel,singaraja,bali,hotel keren,keren,bintang5,bintang 5', '1604307798_723588ba046e25744bca.jpeg', '2020-11-02 02:56:02', '2020-11-02 03:36:12'),
+(10, 5108010, 'hotel keyen', 1, 'gerokgak, buleleng, bali', 'hotel keyen', 1, 'keyenhotel@gmail.com', '0812381623718723', 'keyen,hotel keyen,keyen bingittt', 'default.jpg', '2020-11-08 22:47:26', '2020-11-08 22:47:26'),
+(32, 5108070, 'motel', 4, 'sawan, buleleng, bali', 'motel keren', 5, 'motel@gmail.com', '012398123', 'motel', 'default.jpg', '2020-11-08 23:28:01', '2020-11-08 23:28:01'),
+(36, 5108070, 'homestay', 5, 'sawan, buleleng, bali', 'homestay', 5, 'homestay@gmail.com', '09138123', 'homestay', 'default.jpg', '2020-11-08 23:35:25', '2020-11-08 23:35:25');
 
 -- --------------------------------------------------------
 
@@ -78,7 +224,8 @@ INSERT INTO `tb_akun` (`id_akun`, `nama`, `email`, `password`, `foto`, `role_id`
 (1, 'Putu Modi Julianto1', 'putumodi25@gmail.com', '$2y$10$P2ODTRkJ4rQhiP8pQhujVO0eQrVoWueZbRdoJCEdc0.x2ZYPpmJA2', 'default.jpeg', 1, NULL, '2020-11-01 08:44:09'),
 (2, 'Julianto Modi Putuuuu', 'modi@undiksha.ac.id', '123456', 'default.jpeg', 2, NULL, '2020-11-01 10:51:41'),
 (16, 'modi putu', 'modiputu25@gmail.com', '$2y$10$j.qSN.D3eOXs2J6IWAE5iOncuZu8uxTvJn4z51eQ.y9NhVXds4eWq', 'default.jpeg', 3, '2020-10-18 12:02:55', '2020-10-18 12:02:55'),
-(39, 'guest', 'guest@gmail.com', '$2y$10$7tqFTrQTrMFzbfZZOIBFfOTL.j7YHEKxwHRi9xc4aKl1162Cjr0y2', 'default.jpeg', 4, '2020-10-28 01:16:51', '2020-10-28 01:16:51');
+(39, 'guest', 'guest@gmail.com', '$2y$10$7tqFTrQTrMFzbfZZOIBFfOTL.j7YHEKxwHRi9xc4aKl1162Cjr0y2', 'default.jpeg', 4, '2020-10-28 01:16:51', '2020-10-28 01:16:51'),
+(47, 'manager', 'manager@gmail.com', '$2y$10$v.XRgMHNHwhYl2D1EilW1urTCq520qGRPBnwITb4DntYIsvYQ/7i.', 'default.jpeg', 1, '2020-11-13 21:50:41', '2020-11-13 21:50:41');
 
 -- --------------------------------------------------------
 
@@ -102,12 +249,35 @@ CREATE TABLE `tb_kamar` (
   `id_kamar` int(11) UNSIGNED NOT NULL,
   `no_kamar` varchar(11) NOT NULL,
   `id_akomodasi` int(11) NOT NULL,
-  `lantai` int(11) NOT NULL,
+  `id_tipeKamar` int(11) NOT NULL,
   `tarif` int(11) NOT NULL,
   `keterangan` varchar(256) NOT NULL,
+  `luas_kamar` int(11) NOT NULL,
   `max_guest` int(11) NOT NULL,
-  `foto` varchar(50) NOT NULL,
+  `foto_kamar` varchar(50) NOT NULL,
   `status` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_kamar`
+--
+
+INSERT INTO `tb_kamar` (`id_kamar`, `no_kamar`, `id_akomodasi`, `id_tipeKamar`, `tarif`, `keterangan`, `luas_kamar`, `max_guest`, `foto_kamar`, `status`) VALUES
+(6, '031', 10, 7, 90000, 'kamar mevvah', 28, 5, 'default.jpg', 'Ready');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_pemesanan`
+--
+
+CREATE TABLE `tb_pemesanan` (
+  `id_pemesanan` int(11) NOT NULL,
+  `email` varchar(128) NOT NULL,
+  `id_kamar` int(11) NOT NULL,
+  `jml_tamu` int(11) NOT NULL,
+  `check_in` date NOT NULL,
+  `check_out` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -159,20 +329,50 @@ CREATE TABLE `tb_tamu` (
 CREATE TABLE `tb_tipeAkomodasi` (
   `id_tipeAkomodasi` int(11) NOT NULL,
   `nama_tipe` varchar(128) NOT NULL,
-  `foto` varchar(50) NOT NULL
+  `foto_tipe` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tb_tipeAkomodasi`
 --
 
-INSERT INTO `tb_tipeAkomodasi` (`id_tipeAkomodasi`, `nama_tipe`, `foto`) VALUES
-(1, 'Hotel', 'hotel.jpeg'),
-(2, 'Apartemen', 'apartemen.jpeg'),
-(3, 'Villa', 'villa.jpeg'),
-(4, 'Motel', 'motel.jpeg'),
-(5, 'Homestay', 'homestay.jpeg'),
-(7, 'Resort', 'resort.jpeg');
+INSERT INTO `tb_tipeAkomodasi` (`id_tipeAkomodasi`, `nama_tipe`, `foto_tipe`) VALUES
+(1, 'Hotel', 'hotel.jpg'),
+(2, 'Apartemen', 'apartemen.jpg'),
+(3, 'Villa', 'villa.jpg'),
+(4, 'Motel', 'motel.jpg'),
+(5, 'Homestay', 'homestay.jpg'),
+(6, 'Resort', 'resort.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_tipeKamar`
+--
+
+CREATE TABLE `tb_tipeKamar` (
+  `id_tipeKamar` int(11) UNSIGNED NOT NULL,
+  `nama_tipeKamar` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_tipeKamar`
+--
+
+INSERT INTO `tb_tipeKamar` (`id_tipeKamar`, `nama_tipeKamar`) VALUES
+(1, 'Single Room'),
+(2, 'Twin Room'),
+(3, 'Double Room'),
+(4, 'Family Room'),
+(5, 'Connecting Room'),
+(6, 'Standard Room'),
+(7, 'Superior Room'),
+(8, 'Deluxe Room'),
+(9, 'Junior Suite Room'),
+(10, 'Suite Room'),
+(11, 'Presidential Suite'),
+(12, 'Murphy Room'),
+(13, 'Cabana Room');
 
 -- --------------------------------------------------------
 
@@ -7647,6 +7847,18 @@ INSERT INTO `wilayah_provinsi` (`id`, `nama`) VALUES
 --
 
 --
+-- Indexes for table `Hotel`
+--
+ALTER TABLE `Hotel`
+  ADD PRIMARY KEY (`id_hotel`);
+
+--
+-- Indexes for table `migrations`
+--
+ALTER TABLE `migrations`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tb_akomodasi`
 --
 ALTER TABLE `tb_akomodasi`
@@ -7671,6 +7883,12 @@ ALTER TABLE `tb_kamar`
   ADD PRIMARY KEY (`id_kamar`);
 
 --
+-- Indexes for table `tb_pemesanan`
+--
+ALTER TABLE `tb_pemesanan`
+  ADD PRIMARY KEY (`id_pemesanan`);
+
+--
 -- Indexes for table `tb_role`
 --
 ALTER TABLE `tb_role`
@@ -7687,6 +7905,12 @@ ALTER TABLE `tb_tamu`
 --
 ALTER TABLE `tb_tipeAkomodasi`
   ADD PRIMARY KEY (`id_tipeAkomodasi`);
+
+--
+-- Indexes for table `tb_tipeKamar`
+--
+ALTER TABLE `tb_tipeKamar`
+  ADD PRIMARY KEY (`id_tipeKamar`);
 
 --
 -- Indexes for table `wilayah_kabupaten`
@@ -7711,16 +7935,28 @@ ALTER TABLE `wilayah_provinsi`
 --
 
 --
+-- AUTO_INCREMENT for table `Hotel`
+--
+ALTER TABLE `Hotel`
+  MODIFY `id_hotel` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+
+--
+-- AUTO_INCREMENT for table `migrations`
+--
+ALTER TABLE `migrations`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `tb_akomodasi`
 --
 ALTER TABLE `tb_akomodasi`
-  MODIFY `id_akomodasi` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_akomodasi` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `tb_akun`
 --
 ALTER TABLE `tb_akun`
-  MODIFY `id_akun` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id_akun` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT for table `tb_fasilitas`
@@ -7732,7 +7968,13 @@ ALTER TABLE `tb_fasilitas`
 -- AUTO_INCREMENT for table `tb_kamar`
 --
 ALTER TABLE `tb_kamar`
-  MODIFY `id_kamar` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kamar` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `tb_pemesanan`
+--
+ALTER TABLE `tb_pemesanan`
+  MODIFY `id_pemesanan` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tb_role`
@@ -7751,6 +7993,12 @@ ALTER TABLE `tb_tamu`
 --
 ALTER TABLE `tb_tipeAkomodasi`
   MODIFY `id_tipeAkomodasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `tb_tipeKamar`
+--
+ALTER TABLE `tb_tipeKamar`
+  MODIFY `id_tipeKamar` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

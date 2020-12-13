@@ -46,28 +46,56 @@ class Hotel extends BaseController
 			$cari = $this->M_hotel;
 		}
 
-		$data = [
-			'title' => "Pencarian Data Akomodasi",
-			'akomodasi' => $this->m_akomodasi->getTipeAkomodasi(),
-			'hotel' => $cari->paginate(4, 'tb_akomodasi'),
-			'pager' => $this->m_hotel->pager,
-		];
+		$data['title'] = "Pencarian Data Akomodasi";
+		$data['akomodasi'] = $this->m_akomodasi->getTipeAkomodasi();
+		$data['hotel'] = $cari->paginate(4, 'tb_akomodasi');
+		$data['pager'] = $this->m_hotel->pager;
+		// $data['tipe'] = $this->m_hotel->getTipeAkomodasi($id);
+		$data['max_cost'] = $this->m_hotel->getMaxCost();
+		$data['max_guest'] = $this->m_hotel->getMaxGuests();
 
 		return view('frontend/hasil_cari', $data);
 	}
 
 	public function akomodasi($id)
 	{
-		$data = [
-			'title' => "Pencarian Data Akomodasi",
-			'akomodasi' => $this->m_akomodasi->getTipeAkomodasi(),
-			// 'hotel' => $this->m_hotel->getAkomodasi($id),
-			'hotel' => $this->m_hotel->paginate(4, 'tb_akomodasi'),
-			'pager' => $this->m_hotel->pager,
-			'tipe' => $this->m_hotel->getTipeAkomodasi($id)
-		];
+		// get akomodasi sesuai dengan ID tipe akomodasi
+		$group = $this->m_hotel->getAkomodasiById($id);
+
+		$data['title'] = "Pencarian Data Akomodasi";
+		$data['akomodasi'] = $this->m_akomodasi->getTipeAkomodasi();
+		$data['hotel'] = $group->paginate(4, 'tb_akomodasi');
+		$data['pager'] = $this->m_hotel->pager;
+		$data['tipe'] = $this->m_hotel->getTipeAkomodasi($id);
+		$data['max_cost'] = $this->m_hotel->getMaxCost();
+		$data['max_guest'] = $this->m_hotel->getMaxGuests();
+
+		// dd($data['max_cost']);
 
 		return view('frontend/akomodasi', $data);
+	}
+
+	public function rooms($id)
+	{
+		$data['title'] = "Pencarian Data Akomodasi";
+		$data['akomodasi'] = $this->m_akomodasi->getTipeAkomodasi();
+		$data['rooms'] = $this->m_hotel->getRoomsById($id);
+		$data['nama'] = $this->m_hotel->getNamaAkomodasi($id);
+		$data['max_cost'] = $this->m_hotel->getMaxCost();
+		$data['max_guest'] = $this->m_hotel->getMaxGuests();
+
+		return view('frontend/rooms', $data);
+	}
+
+	public function detail($id)
+	{
+		$data['title'] = "Pencarian Data Akomodasi";
+		$data['akomodasi'] = $this->m_akomodasi->getTipeAkomodasi();
+		$data['room'] = $this->m_hotel->getRoomById($id);
+		$data['max_cost'] = $this->m_hotel->getMaxCost();
+		$data['max_guest'] = $this->m_hotel->getMaxGuests();
+
+		return view('frontend/detail', $data);
 	}
 
 	//--------------------------------------------------------------------

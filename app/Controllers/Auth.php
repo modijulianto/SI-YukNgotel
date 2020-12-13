@@ -10,6 +10,7 @@ class Auth extends BaseController
     public function __construct()
     {
         $this->m_admin = new M_admin();
+        $session = \Config\Services::session();
     }
 
     public function index()
@@ -44,11 +45,11 @@ class Auth extends BaseController
                     return redirect()->to('/');
                 }
             } else {
-                $this->session->set_flashdata('registered', '<div class="alert alert-warning" role="alert"><b>Failed!</b> wrong password!</div>');
+                session()->setFlashdata('registered', '<div class="alert alert-warning" role="alert"><b>Failed!</b> wrong password!</div>');
                 return redirect()->to('/Auth');
             }
         } else {
-            $this->session->set_flashdata('registered', '<div class="alert alert-warning" role="alert"><b>Failed!</b> your email is not registered!</div>');
+            session()->setFlashdata('registered', '<div class="alert alert-warning" role="alert"><b>Failed!</b> your email is not registered!</div>');
             return redirect()->to('/Auth');
         }
     }

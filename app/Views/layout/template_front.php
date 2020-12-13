@@ -15,12 +15,21 @@
     <!-- Font Awesome -->
     <link href="/assets/backend/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
+    <!-- Custom Theme Style -->
+    <link href="/assets/backend/build/css/custom.min.css" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="<?= base_url('/assets/images/logo/logo.png') ?>" style="width:16px; height:16px">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/assets/frontend/style.css">
 
+    <!-- Select2 -->
+    <link href="/assets/backend/vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="/assets/backend/vendors/jquery/dist/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/assets/backend/vendors/select2/dist/js/select2.min.js"></script>
 </head>
 
 <body>
@@ -123,7 +132,7 @@
     <?= $this->renderSection('content'); ?>
 
     <!-- Footer Area Start -->
-    <footer class="footer-area section-padding-80-0">
+    <footer class="footer-area section-padding-80-0" style="margin-left: 0px;">
         <!-- Main Footer Area -->
         <div class="main-footer-area">
             <div class="container">

@@ -57,7 +57,7 @@ class Room extends BaseController
             'luas_kamar' => $this->request->getVar('luas_kamar'),
             'max_guest' => $this->request->getVar('max_guest'),
             'foto_kamar' => "default.jpg",
-            'status' => 'V'
+            'status' => 'Ready'
         ]);
 
         session()->setFlashdata('pesan', 'Added');

@@ -69,9 +69,10 @@
             <div class="hotel-search-form">
                 <form action="/Hotel/cari" method="post">
                     <div class="row justify-content-between align-items-end">
-                        <div class="col-6 col-md-2 col-lg">
+                        <div class="col-6 col-md-2 col-lg" style="height:122px">
                             <label for="destination">Destination</label>
-                            <input type="text" class="form-control" id="destination" name="destination" placeholder="Your destination">
+                            <!-- <input type="text" class="form-control" id="destination" name="destination" placeholder="Your destination"> -->
+                            <select class="form-control" name="destination" id="destination"></select>
                         </div>
                         <div class="col-6 col-md-2 col-lg">
                             <label for="checkIn">Check In</label>
@@ -372,4 +373,29 @@
     </div>
 </div>
 <!-- Partner Area End -->
+
+<script>
+    $("#destination").select2({
+        minimumInputLength: 3,
+        allowClear: true,
+        placeholder: 'Your Destination',
+        ajax: {
+            url: "/Referensi/cari_destination",
+            type: "post",
+            dataType: 'json',
+            delay: 250,
+            data: function(params) {
+                return {
+                    des: params.term // search term
+                };
+            },
+            processResults: function(response) {
+                return {
+                    results: response
+                };
+            },
+            cache: true
+        }
+    });
+</script>
 <?= $this->endSection('content'); ?>

@@ -1,0 +1,186 @@
+CRITICAL - 2020-12-12 06:21:04 --> Argument 2 passed to CodeIgniter\Model::paginate() must be of the type string, array given, called in /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php on line 66
+#0 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(66): CodeIgniter\Model->paginate()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#6 {main}
+CRITICAL - 2020-12-12 09:24:31 --> Argument 1 passed to CodeIgniter\Database\BaseResult::getResult() must be of the type string, null given, called in /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php on line 464
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(464): CodeIgniter\Database\BaseResult->getResult()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Model.php(1184): CodeIgniter\Model->findAll()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(66): CodeIgniter\Model->paginate()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-12-12 09:29:25 --> Object of class stdClass could not be converted to string
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(71): view()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-12-12 09:29:39 --> Array to string conversion
+#0 /opt/lampp/htdocs/yukngotel/app/Views/frontend/akomodasi.php(90): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(71): view()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2020-12-12 09:30:05 --> Array to string conversion
+#0 /opt/lampp/htdocs/yukngotel/app/Views/frontend/akomodasi.php(90): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(71): view()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2020-12-12 09:31:33 --> Object of class stdClass could not be converted to string
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(71): view()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-12-12 09:33:08 --> Object of class stdClass could not be converted to string
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(73): view()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-12-12 09:33:58 --> Object of class stdClass could not be converted to string
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(73): view()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-12-12 09:38:18 --> Object of class stdClass could not be converted to string
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(73): view()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-12-12 09:39:15 --> Array to string conversion
+#0 /opt/lampp/htdocs/yukngotel/app/Views/frontend/akomodasi.php(91): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(73): view()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2020-12-12 09:39:45 --> Object of class stdClass could not be converted to string
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(73): view()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-12-12 09:43:54 --> Object of class stdClass could not be converted to string
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(74): view()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-12-12 09:44:40 --> Object of class stdClass could not be converted to string
+#0 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#2 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(73): view()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2020-12-12 09:44:53 --> Array to string conversion
+#0 /opt/lampp/htdocs/yukngotel/app/Views/frontend/akomodasi.php(90): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(73): view()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2020-12-12 09:50:18 --> Undefined index: max_guest
+#0 /opt/lampp/htdocs/yukngotel/app/Views/frontend/akomodasi.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(74): view()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2020-12-12 09:51:42 --> Undefined index: max_guest
+#0 /opt/lampp/htdocs/yukngotel/app/Views/frontend/akomodasi.php(84): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(74): view()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->akomodasi()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#9 {main}
+CRITICAL - 2020-12-12 23:05:23 --> Undefined variable: max_guest
+#0 /opt/lampp/htdocs/yukngotel/app/Views/frontend/form_cari.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(525): CodeIgniter\View\View->render()
+#3 /opt/lampp/htdocs/yukngotel/app/Views/frontend/hasil_cari.php(57): CodeIgniter\View\View->include()
+#4 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/View/View.php(246): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#6 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(56): view()
+#7 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->cari()
+#8 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#9 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#10 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#12 {main}
+CRITICAL - 2020-12-12 23:06:43 --> Undefined variable: id
+#0 /opt/lampp/htdocs/yukngotel/app/Controllers/Hotel.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Hotel->cari()
+#2 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /opt/lampp/htdocs/yukngotel/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /opt/lampp/htdocs/yukngotel/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/opt/lampp/htdo...')
+#6 {main}
