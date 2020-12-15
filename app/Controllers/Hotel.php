@@ -94,7 +94,7 @@ class Hotel extends BaseController
 		$data['akomodasi'] = $this->m_akomodasi->getTipeAkomodasi();
 		$data['book'] = $this->m_hotel->getRoomById($id);
 
-		return view('frontend/booking', $data);
+		return view('frontend/booking/order', $data);
 	}
 
 	//--------------------------------------------------------------------
